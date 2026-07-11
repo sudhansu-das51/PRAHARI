@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-// Har second current time deta hai, live ghadi ki tarah
 export function useClock() {
   const [now, setNow] = useState(new Date());
 

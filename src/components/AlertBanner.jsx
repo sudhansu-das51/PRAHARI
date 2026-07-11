@@ -3,7 +3,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { LEVELS } from "../lib/alertLevel";
 
-// Hex -> "r,g,b" taaki rgba() me alert color use kar sakein glow ke liye
 function rgb(hex) {
   const n = parseInt(hex.slice(1), 16);
   return `${(n >> 16) & 255},${(n >> 8) & 255},${n & 255}`;
@@ -19,7 +18,6 @@ export default function AlertBanner({ districtName, level, headline, translatedA
       const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       const c = rgb(meta.color);
 
-      // 1. Poore page ka accent morph
       gsap.to(document.documentElement, {
         "--alert": meta.color,
         "--alert-deep": meta.deep,
@@ -27,7 +25,6 @@ export default function AlertBanner({ districtName, level, headline, translatedA
         ease: "power2.out",
       });
 
-      // 2. Banner ka glow + border alert color me morph
       gsap.to(bannerRef.current, {
         borderColor: meta.color,
         boxShadow: `0 8px 28px rgba(0,0,0,0.4), 0 0 40px rgba(${c},0.16), inset 0 1px 0 rgba(255,255,255,0.22)`,
@@ -35,7 +32,6 @@ export default function AlertBanner({ districtName, level, headline, translatedA
         ease: "power2.out",
       });
 
-      // 3. Press-in on change
       if (!reduced) {
         gsap.fromTo(
           bannerRef.current,
@@ -44,7 +40,6 @@ export default function AlertBanner({ districtName, level, headline, translatedA
         );
       }
 
-      // 4. Danger pulse — sirf red
       gsap.set(pulseRef.current, { opacity: 0, scale: 1 });
       if (level === "red" && !reduced) {
         gsap

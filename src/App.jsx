@@ -54,7 +54,7 @@ export default function App() {
 
   return (
     <div className="app">
-      {/* ===== Header ===== */}
+
       <header className="hdr">
         <h1>
           <span className="hdr-dot"></span>
@@ -66,11 +66,11 @@ export default function App() {
         </div>
       </header>
 
-      {/* ===== Main Two-Column Grid ===== */}
+
       <div className="grid">
-        {/* --- Left Column --- */}
+
         <div className="col">
-          {/* District selector */}
+
           <div className="field">
             <select id="district" value={districtId} onChange={(e) => setDistrictId(e.target.value)}>
               {districts.map((d) => (<option key={d.id} value={d.id}>{d.name} District</option>))}
@@ -92,7 +92,7 @@ export default function App() {
                 translatedAction={lang !== "english" && translated ? translated : null}
               />
 
-              {/* Language tabs + Advisory button row */}
+
               <div className="bottom-controls">
                 <div className="langs" role="group" aria-label="Alert language">
                   {LANGS.map((l) => (
@@ -118,14 +118,14 @@ export default function App() {
           )}
         </div>
 
-        {/* --- Right Column --- */}
+
         <div className="col">
           <ShelterList shelters={shelters} districtId={districtId} />
           <Helplines controlRoom={district.controlRoom} />
         </div>
       </div>
 
-      {/* ===== Footer ===== */}
+
       <footer>
         <span className="data-source">Data: IMD Bhubaneswar · OSDMA</span>
         <span className="auto-refresh">Auto-refresh · 10 min</span>

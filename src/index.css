@@ -1,7 +1,3 @@
-/* ============================================================
-   Odisha Cyclone Alert — Glassmorphism theme (CLEAN)
-   Strict 8px spacing system. Single-page. No duplicates.
-   ============================================================ */
 
 @font-face {
   font-family: "Clash Grotesk";
@@ -225,7 +221,6 @@ footer { margin-top: var(--s3); padding-top: var(--s2); border-top: 1px solid rg
   .shelter, .line-btn, .stat, .advisory-btn { transition: none; }
 }
 
-/* ===== Lock to one screen height ===== */
 html, body { height: 100%; overflow: hidden; }
 #root { height: 100vh; }
 .app {
@@ -237,11 +232,9 @@ html, body { height: 100%; overflow: hidden; }
 .grid { flex: 1; min-height: 0; }
 .col { gap: 12px; }
 
-/* language <-> advisory gap pakka */
 .langs { margin-bottom: 12px; }
 .advisory-btn { margin-bottom: 12px; }
 
-/* thoda compact taaki sab aa jaye */
 .banner { padding: 18px 22px; gap: 12px; }
 .banner .lvl { font-size: 36px; }
 .shelter-list { gap: 12px; }
