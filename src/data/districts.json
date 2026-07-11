@@ -1,0 +1,51 @@
+[
+  {
+    "id": "puri",
+    "name": "Puri",
+    "lat": 19.8135,
+    "lon": 85.8312,
+    "controlRoom": "06752-223237"
+  },
+  {
+    "id": "kendrapara",
+    "name": "Kendrapara",
+    "lat": 20.5006,
+    "lon": 86.4221,
+    "controlRoom": "06727-232803"
+  },
+  {
+    "id": "jagatsinghpur",
+    "name": "Jagatsinghpur",
+    "lat": 20.2548,
+    "lon": 86.1706,
+    "controlRoom": "06724-220368"
+  },
+  {
+    "id": "balasore",
+    "name": "Balasore",
+    "lat": 21.4934,
+    "lon": 86.9335,
+    "controlRoom": "06782-262286"
+  },
+  {
+    "id": "bhadrak",
+    "name": "Bhadrak",
+    "lat": 21.0574,
+    "lon": 86.4963,
+    "controlRoom": "06784-251881"
+  },
+  {
+    "id": "ganjam",
+    "name": "Ganjam",
+    "lat": 19.3859,
+    "lon": 85.0511,
+    "controlRoom": "0680-2280104"
+  },
+  {
+    "id": "khordha",
+    "name": "Khordha",
+    "lat": 20.1826,
+    "lon": 85.6188,
+    "controlRoom": "06755-220002"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "_note": "Representative shelter entries. Before public launch, verify and expand from the official OSDMA shelter registry (osdma.gov.in) — names, capacities and locations must be confirmed with district offices.",
+  "puri": [
+    { "name": "Puri Municipal Multipurpose Shelter", "block": "Puri Sadar", "capacity": 1200, "km": 1.8 },
+    { "name": "Samang Multipurpose Cyclone Shelter", "block": "Gop", "capacity": 800, "km": 4.2 },
+    { "name": "Brahmagiri Block Cyclone Shelter", "block": "Brahmagiri", "capacity": 950, "km": 9.6 },
+    { "name": "Astaranga Coastal Shelter", "block": "Astaranga", "capacity": 700, "km": 14.1 }
+  ],
+  "kendrapara": [
+    { "name": "Rajnagar Cyclone Shelter", "block": "Rajnagar", "capacity": 1000, "km": 2.4 },
+    { "name": "Mahakalapada UP School Shelter", "block": "Mahakalapada", "capacity": 650, "km": 6.1 },
+    { "name": "Pattamundai Community Hall", "block": "Pattamundai", "capacity": 700, "km": 12.3 }
+  ],
+  "jagatsinghpur": [
+    { "name": "Paradeep Port Shelter Complex", "block": "Kujang", "capacity": 1500, "km": 3.0 },
+    { "name": "Erasama Block Cyclone Shelter", "block": "Erasama", "capacity": 900, "km": 7.8 },
+    { "name": "Balikuda Multipurpose Shelter", "block": "Balikuda", "capacity": 750, "km": 11.4 }
+  ],
+  "balasore": [
+    { "name": "Chandipur HS Cyclone Shelter", "block": "Remuna", "capacity": 600, "km": 2.1 },
+    { "name": "Baliapal Community Shelter", "block": "Baliapal", "capacity": 750, "km": 8.4 },
+    { "name": "Bhograi Coastal Shelter", "block": "Bhograi", "capacity": 850, "km": 15.7 }
+  ],
+  "bhadrak": [
+    { "name": "Dhamra Port Area Shelter", "block": "Basudevpur", "capacity": 900, "km": 3.4 },
+    { "name": "Chandbali Block Shelter", "block": "Chandbali", "capacity": 800, "km": 7.2 },
+    { "name": "Tihidi Community Shelter", "block": "Tihidi", "capacity": 550, "km": 13.9 }
+  ],
+  "ganjam": [
+    { "name": "Chhatrapur Block Cyclone Shelter", "block": "Chhatrapur", "capacity": 850, "km": 3.5 },
+    { "name": "Gopalpur Multipurpose Shelter", "block": "Ganjam", "capacity": 1100, "km": 5.9 },
+    { "name": "Rangeilunda Coastal Shelter", "block": "Rangeilunda", "capacity": 700, "km": 10.8 }
+  ],
+  "khordha": [
+    { "name": "Bhubaneswar Unit-9 Shelter", "block": "Bhubaneswar", "capacity": 1400, "km": 2.7 },
+    { "name": "Jatni Community Hall", "block": "Jatni", "capacity": 600, "km": 11.2 },
+    { "name": "Balianta Block Shelter", "block": "Balianta", "capacity": 500, "km": 14.5 }
+  ]
+}
