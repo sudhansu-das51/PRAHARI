@@ -8,17 +8,23 @@ export default async function handler(req, res) {
   }
 
   try {
-    const r = await fetch("https://api.anthropic.com/v1/messages", {
+    const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
       headers: {
-        "x-api-key": process.env.ANTHROPIC_API_KEY,
-        "anthropic-version": "2023-06-01",
+        Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 400,
+        model: "llama-3.3-70b-versatile",
+        temperature: 0.3,
+        max_tokens: 500,
         messages: [
+          {
+            role: "system",
+            content:
+              "You write cyclone-preparedness advisories for coastal Odisha residents. " +
+              "Output ONLY the numbered points, no preamble, no closing remarks.",
+          },
           {
             role: "user",
             content:
@@ -35,16 +41,20 @@ export default async function handler(req, res) {
 
     if (!r.ok) {
       const detail = await r.text();
-      console.error("Claude error:", detail);
+      console.error("Groq error:", detail);
       return res.status(502).json({ error: "Advisory service unavailable" });
     }
 
     const data = await r.json();
-    const text = (data.content || [])
-      .filter((b) => b.type === "text")
-      .map((b) => b.text)
-      .join("\n")
-      .trim();
+    const choice = data.choices?.[0];
+    const text = choice?.message?.content?.trim();
+
+    // A cut-off advisory can drop the very instruction that matters, so a
+    // truncated response is treated as a failure rather than shown.
+    if (choice?.finish_reason === "length") {
+      console.error("advisory truncated at max_tokens");
+      return res.status(502).json({ error: "Advisory incomplete" });
+    }
 
     if (!text) return res.status(502).json({ error: "Empty advisory" });
 

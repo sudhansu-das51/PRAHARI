@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Real-time cyclone alerts, shelter locations and emergency helplines for coastal Odisha districts. Data from IMD Bhubaneswar and OSDMA." />
-    <meta name="theme-color" content="#0a0e14" />
-    <title>Odisha Cyclone Alert — Live Dashboard</title>
+    <meta name="description" content="Cyclone alert level, nearest shelters and emergency helplines for coastal Odisha districts. Weather from Open-Meteo, shelters from OSDMA. Works offline." />
+    <meta name="theme-color" content="#070B0F" />
+    <title>Prahari — Odisha Cyclone Alert</title>
+
+    <!-- Installed-app surface. The manifest itself is injected by
+         vite-plugin-pwa at build time. -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Prahari" />
+    <!-- Clash Grotesk is the UI face and is only referenced from an @font-face
+         inside index.css, so the browser does not discover it until the CSS
+         has parsed. Preloading it means the swap lands before the intro
+         animation rather than reflowing the page mid-way through it. -->
+    <link rel="preload" href="/fonts/ClashGrotesk-Light.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="/fonts/ClashGrotesk-Bold.otf" as="font" type="font/otf" crossorigin />
+
+    <!-- Only JetBrains Mono is loaded here. Inter used to be requested at five
+         weights and is not in any font stack in the CSS — it was pure download
+         on a render-blocking request. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>

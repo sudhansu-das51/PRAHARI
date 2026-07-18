@@ -1,14 +1,14 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { LEVELS } from "../lib/alertLevel";
+import { LEVELS, DO_NOW } from "../lib/alertLevel";
 
 function rgb(hex) {
   const n = parseInt(hex.slice(1), 16);
   return `${(n >> 16) & 255},${(n >> 8) & 255},${n & 255}`;
 }
 
-export default function AlertBanner({ districtName, level, headline, translatedAction }) {
+export default function AlertBanner({ districtName, level, headline, translatedAction, lang = "english" }) {
   const bannerRef = useRef(null);
   const pulseRef = useRef(null);
   const meta = LEVELS[level];
@@ -32,13 +32,8 @@ export default function AlertBanner({ districtName, level, headline, translatedA
         ease: "power2.out",
       });
 
-      if (!reduced) {
-        gsap.fromTo(
-          bannerRef.current,
-          { scale: 0.985, opacity: 0.9 },
-          { scale: 1, opacity: 1, duration: 0.45, ease: "power3.out" }
-        );
-      }
+      // No entrance tween here — App owns the whole intro on one timeline, and
+      // a second tween on this element fought it for control of opacity.
 
       gsap.set(pulseRef.current, { opacity: 0, scale: 1 });
       if (level === "red" && !reduced) {
@@ -61,7 +56,7 @@ export default function AlertBanner({ districtName, level, headline, translatedA
       <div className="lvl">{meta.word}</div>
       <div className="headline">{headline}</div>
       <div className="action">
-        <strong>Do now:</strong> {translatedAction || meta.action}
+        <strong>{DO_NOW[lang] || DO_NOW.english}</strong> {translatedAction || meta.action}
       </div>
     </section>
   );

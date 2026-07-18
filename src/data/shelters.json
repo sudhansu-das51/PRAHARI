@@ -1,39 +1,4921 @@
 {
-  "_note": "Representative shelter entries. Before public launch, verify and expand from the official OSDMA shelter registry (osdma.gov.in) — names, capacities and locations must be confirmed with district offices.",
-  "puri": [
-    { "name": "Puri Municipal Multipurpose Shelter", "block": "Puri Sadar", "capacity": 1200, "km": 1.8 },
-    { "name": "Samang Multipurpose Cyclone Shelter", "block": "Gop", "capacity": 800, "km": 4.2 },
-    { "name": "Brahmagiri Block Cyclone Shelter", "block": "Brahmagiri", "capacity": 950, "km": 9.6 },
-    { "name": "Astaranga Coastal Shelter", "block": "Astaranga", "capacity": 700, "km": 14.1 }
-  ],
-  "kendrapara": [
-    { "name": "Rajnagar Cyclone Shelter", "block": "Rajnagar", "capacity": 1000, "km": 2.4 },
-    { "name": "Mahakalapada UP School Shelter", "block": "Mahakalapada", "capacity": 650, "km": 6.1 },
-    { "name": "Pattamundai Community Hall", "block": "Pattamundai", "capacity": 700, "km": 12.3 }
-  ],
-  "jagatsinghpur": [
-    { "name": "Paradeep Port Shelter Complex", "block": "Kujang", "capacity": 1500, "km": 3.0 },
-    { "name": "Erasama Block Cyclone Shelter", "block": "Erasama", "capacity": 900, "km": 7.8 },
-    { "name": "Balikuda Multipurpose Shelter", "block": "Balikuda", "capacity": 750, "km": 11.4 }
-  ],
-  "balasore": [
-    { "name": "Chandipur HS Cyclone Shelter", "block": "Remuna", "capacity": 600, "km": 2.1 },
-    { "name": "Baliapal Community Shelter", "block": "Baliapal", "capacity": 750, "km": 8.4 },
-    { "name": "Bhograi Coastal Shelter", "block": "Bhograi", "capacity": 850, "km": 15.7 }
-  ],
-  "bhadrak": [
-    { "name": "Dhamra Port Area Shelter", "block": "Basudevpur", "capacity": 900, "km": 3.4 },
-    { "name": "Chandbali Block Shelter", "block": "Chandbali", "capacity": 800, "km": 7.2 },
-    { "name": "Tihidi Community Shelter", "block": "Tihidi", "capacity": 550, "km": 13.9 }
-  ],
-  "ganjam": [
-    { "name": "Chhatrapur Block Cyclone Shelter", "block": "Chhatrapur", "capacity": 850, "km": 3.5 },
-    { "name": "Gopalpur Multipurpose Shelter", "block": "Ganjam", "capacity": 1100, "km": 5.9 },
-    { "name": "Rangeilunda Coastal Shelter", "block": "Rangeilunda", "capacity": 700, "km": 10.8 }
-  ],
-  "khordha": [
-    { "name": "Bhubaneswar Unit-9 Shelter", "block": "Bhubaneswar", "capacity": 1400, "km": 2.7 },
-    { "name": "Jatni Community Hall", "block": "Jatni", "capacity": 600, "km": 11.2 },
-    { "name": "Balianta Block Shelter", "block": "Balianta", "capacity": 500, "km": 14.5 }
+ "_source": {
+  "registry": "OSDMA Multi Purpose Cyclone/Flood Shelters",
+  "url": "https://www.osdma.org/preparedness/multi-purpose-cyclone-flood-shelters/",
+  "retrieved": "2026-07-18",
+  "fields": "name and block are the registry's village/block labels; lat/lon are the registry's own coordinates; type is the scheme the shelter was built under (NCRMP, MCS, IRCS, ICZMP etc).",
+  "caveats": [
+   "Capacity is NOT published in this registry, so no capacity figure is stored. Do not reintroduce one without a sourced number.",
+   "Jagatsinghpur returns only 5 shelters from OSDMA. The district has far more in reality — the upstream registry is incomplete, not the scrape.",
+   "One Ganjam row (Kesapur) is labelled block 'Balasore Sadar' in the source. Its coordinates sit inside Ganjam, so the coordinates are trustworthy and the block label is not.",
+   "Names are the registry's village/site labels, title-cased for display. They are not formal shelter names."
   ]
+ },
+ "puri": [
+  {
+   "name": "Bantilo",
+   "block": "Astaranga",
+   "lat": 19.943537,
+   "lon": 86.23485,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Dakhin Pantal",
+   "block": "Astaranga",
+   "lat": 19.997277,
+   "lon": 86.309908,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Dihi Korara",
+   "block": "Astaranga",
+   "lat": 20.047336,
+   "lon": 86.278366,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Kaliakana",
+   "block": "Astaranga",
+   "lat": 20.013122,
+   "lon": 86.303595,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Karal",
+   "block": "Astaranga",
+   "lat": 19.925282,
+   "lon": 86.23997,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Keatjanga",
+   "block": "Astaranga",
+   "lat": 19.910164,
+   "lon": 86.228915,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kendrapati",
+   "block": "Astaranga",
+   "lat": 19.976006,
+   "lon": 86.219866,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Khandasahi",
+   "block": "Astaranga",
+   "lat": 20.014733,
+   "lon": 86.248644,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Kundeshwar",
+   "block": "Astaranga",
+   "lat": 19.970621,
+   "lon": 86.208422,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Madhupur",
+   "block": "Astaranga",
+   "lat": 19.967324,
+   "lon": 86.307009,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Mudgal",
+   "block": "Astaranga",
+   "lat": 19.962147,
+   "lon": 86.23363,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Nagar",
+   "block": "Astaranga",
+   "lat": 19.998646,
+   "lon": 86.306742,
+   "type": "IRCS"
+  },
+  {
+   "name": "Nagar",
+   "block": "Astaranga",
+   "lat": 20.00652,
+   "lon": 86.30572,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Natharo",
+   "block": "Astaranga",
+   "lat": 19.966116,
+   "lon": 86.237902,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Nuagar",
+   "block": "Astaranga",
+   "lat": 19.972636,
+   "lon": 86.322451,
+   "type": "IRCS"
+  },
+  {
+   "name": "Osian",
+   "block": "Astaranga",
+   "lat": 20.022233,
+   "lon": 86.288076,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Patsundarpur",
+   "block": "Astaranga",
+   "lat": 20.022921,
+   "lon": 86.285874,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Ratanpur",
+   "block": "Astaranga",
+   "lat": 19.938027,
+   "lon": 86.223658,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Talda",
+   "block": "Astaranga",
+   "lat": 20.032902,
+   "lon": 86.251948,
+   "type": "MCS"
+  },
+  {
+   "name": "Tondahar",
+   "block": "Astaranga",
+   "lat": 19.904438,
+   "lon": 86.221331,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Banastapada",
+   "block": "Brahmagiri",
+   "lat": 19.861891,
+   "lon": 85.733363,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Bara Bandhkera",
+   "block": "Brahmagiri",
+   "lat": 19.811198,
+   "lon": 85.652193,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Bara Benakudi",
+   "block": "Brahmagiri",
+   "lat": 19.786085,
+   "lon": 85.577196,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Barjhanga",
+   "block": "Brahmagiri",
+   "lat": 19.789509,
+   "lon": 85.712046,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bhandarikuda",
+   "block": "Brahmagiri",
+   "lat": 19.864939,
+   "lon": 85.638636,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Bidurbank",
+   "block": "Brahmagiri",
+   "lat": 19.836039,
+   "lon": 85.640086,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Bolukhadra Patna",
+   "block": "Brahmagiri",
+   "lat": 19.782316,
+   "lon": 85.722559,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Brahmanja",
+   "block": "Brahmagiri",
+   "lat": 19.81942,
+   "lon": 85.624049,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Champanik",
+   "block": "Brahmagiri",
+   "lat": 19.761347,
+   "lon": 85.649805,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Chaturthasha",
+   "block": "Brahmagiri",
+   "lat": 19.844946,
+   "lon": 85.74145,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Chhatapur",
+   "block": "Brahmagiri",
+   "lat": 19.851134,
+   "lon": 85.638453,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Dharanikudi",
+   "block": "Brahmagiri",
+   "lat": 19.799956,
+   "lon": 85.588575,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Dimirisana",
+   "block": "Brahmagiri",
+   "lat": 19.873724,
+   "lon": 85.663706,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Ghatakuri",
+   "block": "Brahmagiri",
+   "lat": 19.860501,
+   "lon": 85.671267,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Golora",
+   "block": "Brahmagiri",
+   "lat": 19.85006,
+   "lon": 85.598452,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Gorual",
+   "block": "Brahmagiri",
+   "lat": 19.81163,
+   "lon": 85.75648,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Gourbandh",
+   "block": "Brahmagiri",
+   "lat": 19.821383,
+   "lon": 85.662943,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Jagadal",
+   "block": "Brahmagiri",
+   "lat": 19.863833,
+   "lon": 85.587344,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Jagannath Patna",
+   "block": "Brahmagiri",
+   "lat": 19.772022,
+   "lon": 85.70521,
+   "type": "IRCS"
+  },
+  {
+   "name": "Kahalpada",
+   "block": "Brahmagiri",
+   "lat": 19.810755,
+   "lon": 85.608286,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kankura",
+   "block": "Brahmagiri",
+   "lat": 19.832905,
+   "lon": 85.74161,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Mandpara",
+   "block": "Brahmagiri",
+   "lat": 19.841971,
+   "lon": 85.638529,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Matmatpur",
+   "block": "Brahmagiri",
+   "lat": 19.763357,
+   "lon": 85.654429,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Mot",
+   "block": "Brahmagiri",
+   "lat": 19.752585,
+   "lon": 85.668658,
+   "type": "IRCS"
+  },
+  {
+   "name": "Narsingha Patna",
+   "block": "Brahmagiri",
+   "lat": 19.763874,
+   "lon": 85.702158,
+   "type": "MCS"
+  },
+  {
+   "name": "Nuapada",
+   "block": "Brahmagiri",
+   "lat": 19.86956,
+   "lon": 85.61262,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Palank",
+   "block": "Brahmagiri",
+   "lat": 19.77406,
+   "lon": 85.679026,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Ramchandrapur",
+   "block": "Brahmagiri",
+   "lat": 19.866806,
+   "lon": 85.657496,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Sana Bandhkera",
+   "block": "Brahmagiri",
+   "lat": 19.81008,
+   "lon": 85.641138,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Satyakipur",
+   "block": "Brahmagiri",
+   "lat": 19.767716,
+   "lon": 85.661394,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Talmal",
+   "block": "Brahmagiri",
+   "lat": 19.88872,
+   "lon": 85.608553,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Teran",
+   "block": "Brahmagiri",
+   "lat": 19.820437,
+   "lon": 85.733149,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Tiarpari",
+   "block": "Brahmagiri",
+   "lat": 19.862213,
+   "lon": 85.663645,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Dhankera",
+   "block": "Delanga",
+   "lat": 19.992148,
+   "lon": 85.702845,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Gurupail",
+   "block": "Delanga",
+   "lat": 20.016594,
+   "lon": 85.73334,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Indipur",
+   "block": "Delanga",
+   "lat": 19.982977,
+   "lon": 85.726305,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Kalyanpur",
+   "block": "Delanga",
+   "lat": 20.034346,
+   "lon": 85.692248,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Achyutpur",
+   "block": "Gop",
+   "lat": 19.914582,
+   "lon": 86.060831,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Alnggola",
+   "block": "Gop",
+   "lat": 19.968016,
+   "lon": 86.152422,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Ambiligan",
+   "block": "Gop",
+   "lat": 19.938055,
+   "lon": 86.110674,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Bangor",
+   "block": "Gop",
+   "lat": 19.874501,
+   "lon": 86.006609,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Baniasahi",
+   "block": "Gop",
+   "lat": 19.891749,
+   "lon": 85.97362,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Bantaligram",
+   "block": "Gop",
+   "lat": 19.915112,
+   "lon": 85.990115,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Bartara",
+   "block": "Gop",
+   "lat": 19.924574,
+   "lon": 86.037821,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bhuan",
+   "block": "Gop",
+   "lat": 19.865225,
+   "lon": 85.947955,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Chandrabhaga",
+   "block": "Gop",
+   "lat": 19.867693,
+   "lon": 86.111491,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Durgapur",
+   "block": "Gop",
+   "lat": 19.970057,
+   "lon": 86.143961,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Gardali",
+   "block": "Gop",
+   "lat": 19.961643,
+   "lon": 85.983431,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Inchol",
+   "block": "Gop",
+   "lat": 19.900919,
+   "lon": 85.978121,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Kantijhari",
+   "block": "Gop",
+   "lat": 19.917654,
+   "lon": 86.098391,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Khalkata",
+   "block": "Gop",
+   "lat": 19.855681,
+   "lon": 86.042139,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kundis",
+   "block": "Gop",
+   "lat": 19.947466,
+   "lon": 86.064234,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Mandupoda",
+   "block": "Gop",
+   "lat": 19.958752,
+   "lon": 86.085825,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Poropara",
+   "block": "Gop",
+   "lat": 19.942532,
+   "lon": 85.960818,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Sarda",
+   "block": "Gop",
+   "lat": 19.934927,
+   "lon": 86.061533,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Surjanagar",
+   "block": "Gop",
+   "lat": 19.90304,
+   "lon": 86.004748,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Tarana",
+   "block": "Gop",
+   "lat": 19.914896,
+   "lon": 85.955378,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Arual",
+   "block": "Kakatpur",
+   "lat": 19.919762,
+   "lon": 86.144617,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Chhatipara",
+   "block": "Kakatpur",
+   "lat": 19.911583,
+   "lon": 86.208987,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Dhantir",
+   "block": "Kakatpur",
+   "lat": 19.949892,
+   "lon": 86.12475,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Itambarpur",
+   "block": "Kakatpur",
+   "lat": 19.988714,
+   "lon": 86.191836,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Jaleshwarpara",
+   "block": "Kakatpur",
+   "lat": 19.971442,
+   "lon": 86.174219,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Nariyamatha",
+   "block": "Kakatpur",
+   "lat": 19.904547,
+   "lon": 86.19475,
+   "type": "MCS"
+  },
+  {
+   "name": "Tentuliya",
+   "block": "Kakatpur",
+   "lat": 19.92968,
+   "lon": 86.203646,
+   "type": "IRCS"
+  },
+  {
+   "name": "Anilra",
+   "block": "Kanas",
+   "lat": 19.969015,
+   "lon": 85.580263,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Baku",
+   "block": "Kanas",
+   "lat": 19.98581,
+   "lon": 85.583536,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Baraora",
+   "block": "Kanas",
+   "lat": 19.921265,
+   "lon": 85.574259,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Basantpur",
+   "block": "Kanas",
+   "lat": 19.926352,
+   "lon": 85.624934,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Berhatandul",
+   "block": "Kanas",
+   "lat": 19.962727,
+   "lon": 85.592715,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Bilapatna",
+   "block": "Kanas",
+   "lat": 19.919674,
+   "lon": 85.597849,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Chupurungi",
+   "block": "Kanas",
+   "lat": 19.968632,
+   "lon": 85.616684,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Deipur",
+   "block": "Kanas",
+   "lat": 19.941534,
+   "lon": 85.535387,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Gopinathpur",
+   "block": "Kanas",
+   "lat": 19.914469,
+   "lon": 85.590494,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Gorkharod",
+   "block": "Kanas",
+   "lat": 19.956064,
+   "lon": 85.525652,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Jagulaipadar",
+   "block": "Kanas",
+   "lat": 19.926131,
+   "lon": 85.592913,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Jamiligoda",
+   "block": "Kanas",
+   "lat": 19.917311,
+   "lon": 85.610003,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Jankia",
+   "block": "Kanas",
+   "lat": 19.969353,
+   "lon": 85.623095,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Jodapadar",
+   "block": "Kanas",
+   "lat": 19.900456,
+   "lon": 85.634348,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Kaudiapur",
+   "block": "Kanas",
+   "lat": 19.966335,
+   "lon": 85.620376,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Kaurikhani",
+   "block": "Kanas",
+   "lat": 19.942948,
+   "lon": 85.590983,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Khandahota",
+   "block": "Kanas",
+   "lat": 19.945136,
+   "lon": 85.639587,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Kolapadar",
+   "block": "Kanas",
+   "lat": 19.917578,
+   "lon": 85.589678,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Lakhanpur",
+   "block": "Kanas",
+   "lat": 19.998198,
+   "lon": 85.606844,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Mulabasanta",
+   "block": "Kanas",
+   "lat": 19.912677,
+   "lon": 85.652698,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Paikmara",
+   "block": "Kanas",
+   "lat": 19.915241,
+   "lon": 85.582117,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Sahaspur",
+   "block": "Kanas",
+   "lat": 19.930323,
+   "lon": 85.582842,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Siriapara",
+   "block": "Kanas",
+   "lat": 19.964779,
+   "lon": 85.580065,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Sunakhara",
+   "block": "Kanas",
+   "lat": 19.948706,
+   "lon": 85.59421,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Telongapara",
+   "block": "Kanas",
+   "lat": 19.945566,
+   "lon": 85.547404,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Alanda",
+   "block": "Krushnaprasad",
+   "lat": 19.604889,
+   "lon": 85.314478,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Baghmunda",
+   "block": "Krushnaprasad",
+   "lat": 19.677386,
+   "lon": 85.477785,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Bajrakot",
+   "block": "Krushnaprasad",
+   "lat": 19.527054,
+   "lon": 85.222803,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Baraanla",
+   "block": "Krushnaprasad",
+   "lat": 19.616724,
+   "lon": 85.258997,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Brahmandeo",
+   "block": "Krushnaprasad",
+   "lat": 19.497481,
+   "lon": 85.190241,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Brahmapur",
+   "block": "Krushnaprasad",
+   "lat": 19.649395,
+   "lon": 85.434771,
+   "type": "MCS"
+  },
+  {
+   "name": "Budhibar",
+   "block": "Krushnaprasad",
+   "lat": 19.577251,
+   "lon": 85.212504,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Degiri",
+   "block": "Krushnaprasad",
+   "lat": 19.527987,
+   "lon": 85.232836,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Gangadharpur",
+   "block": "Krushnaprasad",
+   "lat": 19.710709,
+   "lon": 85.519709,
+   "type": "IRCS"
+  },
+  {
+   "name": "Gobakund",
+   "block": "Krushnaprasad",
+   "lat": 19.687483,
+   "lon": 85.516642,
+   "type": "IRCS"
+  },
+  {
+   "name": "Gomundia",
+   "block": "Krushnaprasad",
+   "lat": 19.625614,
+   "lon": 85.352633,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Gopakuda",
+   "block": "Krushnaprasad",
+   "lat": 19.584748,
+   "lon": 85.238962,
+   "type": "MCS"
+  },
+  {
+   "name": "Gopinathpur",
+   "block": "Krushnaprasad",
+   "lat": 19.740996,
+   "lon": 85.569247,
+   "type": "MCS"
+  },
+  {
+   "name": "Gurubal",
+   "block": "Krushnaprasad",
+   "lat": 19.680388,
+   "lon": 85.39947,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Jamuna",
+   "block": "Krushnaprasad",
+   "lat": 19.59743,
+   "lon": 85.320093,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Jenapur",
+   "block": "Krushnaprasad",
+   "lat": 19.641066,
+   "lon": 85.372927,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Jharkata",
+   "block": "Krushnaprasad",
+   "lat": 19.635485,
+   "lon": 85.385653,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Kanheipur",
+   "block": "Krushnaprasad",
+   "lat": 19.584894,
+   "lon": 85.276766,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Khatiakudi",
+   "block": "Krushnaprasad",
+   "lat": 19.629736,
+   "lon": 85.250307,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Khirsahi",
+   "block": "Krushnaprasad",
+   "lat": 19.630549,
+   "lon": 85.39522,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Krishnaprasadgarh",
+   "block": "Krushnaprasad",
+   "lat": 19.634335,
+   "lon": 85.259363,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Kurupala",
+   "block": "Krushnaprasad",
+   "lat": 19.627912,
+   "lon": 85.380367,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Mahisa",
+   "block": "Krushnaprasad",
+   "lat": 19.653265,
+   "lon": 85.426485,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Manikpatna",
+   "block": "Krushnaprasad",
+   "lat": 19.696167,
+   "lon": 85.533144,
+   "type": "MCS"
+  },
+  {
+   "name": "Nuagaon",
+   "block": "Krushnaprasad",
+   "lat": 19.610218,
+   "lon": 85.350458,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Nuagaon",
+   "block": "Krushnaprasad",
+   "lat": 19.682785,
+   "lon": 85.480059,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Nuapara",
+   "block": "Krushnaprasad",
+   "lat": 19.667118,
+   "lon": 85.385531,
+   "type": "MCS"
+  },
+  {
+   "name": "Panasapada",
+   "block": "Krushnaprasad",
+   "lat": 19.719601,
+   "lon": 85.525256,
+   "type": "MCS"
+  },
+  {
+   "name": "Phatepur",
+   "block": "Krushnaprasad",
+   "lat": 19.54785,
+   "lon": 85.253428,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Pirijipur",
+   "block": "Krushnaprasad",
+   "lat": 19.691424,
+   "lon": 85.492571,
+   "type": "IRCS"
+  },
+  {
+   "name": "Rameswarpur",
+   "block": "Krushnaprasad",
+   "lat": 19.716843,
+   "lon": 85.54407,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Ramlanka",
+   "block": "Krushnaprasad",
+   "lat": 19.495222,
+   "lon": 85.182932,
+   "type": "MCS"
+  },
+  {
+   "name": "Sanaanla",
+   "block": "Krushnaprasad",
+   "lat": 19.621564,
+   "lon": 85.259801,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Sanapatna",
+   "block": "Krushnaprasad",
+   "lat": 19.700957,
+   "lon": 85.542025,
+   "type": "IRCS"
+  },
+  {
+   "name": "Satpara",
+   "block": "Krushnaprasad",
+   "lat": 19.669997,
+   "lon": 85.445025,
+   "type": "MCS"
+  },
+  {
+   "name": "Siandi",
+   "block": "Krushnaprasad",
+   "lat": 19.576761,
+   "lon": 85.299143,
+   "type": "MCS"
+  },
+  {
+   "name": "Siara",
+   "block": "Krushnaprasad",
+   "lat": 19.728594,
+   "lon": 85.541209,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Sipia",
+   "block": "Krushnaprasad",
+   "lat": 19.649534,
+   "lon": 85.356531,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Siyala",
+   "block": "Krushnaprasad",
+   "lat": 19.59342,
+   "lon": 85.252673,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Talrala",
+   "block": "Krushnaprasad",
+   "lat": 19.539713,
+   "lon": 85.202906,
+   "type": "MCS"
+  },
+  {
+   "name": "Titipo",
+   "block": "Krushnaprasad",
+   "lat": 19.613768,
+   "lon": 85.337275,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Bara Machhapur",
+   "block": "Nimapada",
+   "lat": 20.111584,
+   "lon": 85.962878,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Baulpada",
+   "block": "Nimapada",
+   "lat": 20.108616,
+   "lon": 85.929659,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Garatorihan",
+   "block": "Nimapada",
+   "lat": 20.046747,
+   "lon": 85.924471,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Bilipara",
+   "block": "Pipili",
+   "lat": 20.154715,
+   "lon": 85.879999,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Kakuria",
+   "block": "Pipili",
+   "lat": 20.141928,
+   "lon": 85.763026,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Lakshminarayanpur",
+   "block": "Pipili",
+   "lat": 20.170578,
+   "lon": 85.863131,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Balighat",
+   "block": "Puri",
+   "lat": 19.823376,
+   "lon": 85.849192,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Beladol",
+   "block": "Puri",
+   "lat": 19.849833,
+   "lon": 85.902102,
+   "type": "MCS"
+  },
+  {
+   "name": "Ganganarayanpur",
+   "block": "Puri",
+   "lat": 19.900997,
+   "lon": 85.829478,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Ganganarayanpur",
+   "block": "Puri",
+   "lat": 19.900303,
+   "lon": 85.829399,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Hantur",
+   "block": "Puri",
+   "lat": 19.871159,
+   "lon": 85.754023,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Jamarsuan",
+   "block": "Puri",
+   "lat": 19.913471,
+   "lon": 85.915591,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kantasil",
+   "block": "Puri",
+   "lat": 19.884705,
+   "lon": 85.874926,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Khandighar",
+   "block": "Puri",
+   "lat": 19.902622,
+   "lon": 85.738612,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Khariapada",
+   "block": "Puri",
+   "lat": 19.818253,
+   "lon": 85.797152,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Krushnanjanpur",
+   "block": "Puri",
+   "lat": 19.882223,
+   "lon": 85.795718,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Kurunti",
+   "block": "Puri",
+   "lat": 19.871159,
+   "lon": 85.740259,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Puri",
+   "block": "Puri",
+   "lat": 19.808008,
+   "lon": 85.820101,
+   "type": "MCS"
+  },
+  {
+   "name": "Rahangiria",
+   "block": "Puri",
+   "lat": 19.859997,
+   "lon": 85.851855,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Redua",
+   "block": "Puri",
+   "lat": 19.848765,
+   "lon": 85.857378,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Siaro",
+   "block": "Puri",
+   "lat": 19.944224,
+   "lon": 85.950213,
+   "type": "MCS"
+  },
+  {
+   "name": "Ura",
+   "block": "Puri",
+   "lat": 19.879755,
+   "lon": 85.88251,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Alagum",
+   "block": "Satyabadi",
+   "lat": 19.951937,
+   "lon": 85.745898,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Bidyadharpur",
+   "block": "Satyabadi",
+   "lat": 19.977787,
+   "lon": 85.876627,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Malasahi",
+   "block": "Satyabadi",
+   "lat": 19.981184,
+   "lon": 85.907702,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Narendrapur",
+   "block": "Satyabadi",
+   "lat": 19.941408,
+   "lon": 85.762881,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Sukol",
+   "block": "Satyabadi",
+   "lat": 19.935213,
+   "lon": 85.707789,
+   "type": "MCS(CMRF)"
+  }
+ ],
+ "kendrapara": [
+  {
+   "name": "Ekmania",
+   "block": "Aul",
+   "lat": 20.635179,
+   "lon": 86.735142,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Singal",
+   "block": "Aul",
+   "lat": 20.644306,
+   "lon": 86.480328,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Dhanmandal",
+   "block": "Gadarpur",
+   "lat": 20.412394,
+   "lon": 86.318597,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Koruan",
+   "block": "Gadarpur",
+   "lat": 20.404024,
+   "lon": 86.33856,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Naindipur",
+   "block": "Gadarpur",
+   "lat": 20.389685,
+   "lon": 86.386682,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Sirasta",
+   "block": "Gadarpur",
+   "lat": 20.357565,
+   "lon": 86.409653,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Bedari",
+   "block": "Garadapur",
+   "lat": 20.377177,
+   "lon": 86.418017,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Balarampur",
+   "block": "Kendrapara",
+   "lat": 20.464245,
+   "lon": 86.38753,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Adal",
+   "block": "Mahakalapada",
+   "lat": 20.398647,
+   "lon": 86.63387,
+   "type": "MCS"
+  },
+  {
+   "name": "Akhrasali",
+   "block": "Mahakalapada",
+   "lat": 20.344129,
+   "lon": 86.634528,
+   "type": "MCS"
+  },
+  {
+   "name": "Bag Gahan",
+   "block": "Mahakalapada",
+   "lat": 20.434199,
+   "lon": 86.686093,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Baliganda",
+   "block": "Mahakalapada",
+   "lat": 20.495419,
+   "lon": 86.669293,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bandhapara",
+   "block": "Mahakalapada",
+   "lat": 20.390844,
+   "lon": 86.605579,
+   "type": "IRCS"
+  },
+  {
+   "name": "Baradanga",
+   "block": "Mahakalapada",
+   "lat": 20.422253,
+   "lon": 86.64125,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Baragaon",
+   "block": "Mahakalapada",
+   "lat": 20.386184,
+   "lon": 86.501061,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Barajbahukud",
+   "block": "Mahakalapada",
+   "lat": 20.345519,
+   "lon": 86.668715,
+   "type": "MCS"
+  },
+  {
+   "name": "Baratopi",
+   "block": "Mahakalapada",
+   "lat": 20.345761,
+   "lon": 86.693488,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Barkulkhola",
+   "block": "Mahakalapada",
+   "lat": 20.326696,
+   "lon": 86.724306,
+   "type": "IRCS"
+  },
+  {
+   "name": "Barodanda",
+   "block": "Mahakalapada",
+   "lat": 20.440157,
+   "lon": 86.679678,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Benakanda",
+   "block": "Mahakalapada",
+   "lat": 20.445287,
+   "lon": 86.696401,
+   "type": "IRCS"
+  },
+  {
+   "name": "Chhanda",
+   "block": "Mahakalapada",
+   "lat": 20.345065,
+   "lon": 86.583114,
+   "type": "MCS"
+  },
+  {
+   "name": "Gagua",
+   "block": "Mahakalapada",
+   "lat": 20.488663,
+   "lon": 86.657127,
+   "type": "MCS"
+  },
+  {
+   "name": "Gokhakhati",
+   "block": "Mahakalapada",
+   "lat": 20.375283,
+   "lon": 86.59874,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Jadupur",
+   "block": "Mahakalapada",
+   "lat": 20.378795,
+   "lon": 86.527526,
+   "type": "IRCS"
+  },
+  {
+   "name": "Jamara",
+   "block": "Mahakalapada",
+   "lat": 20.425255,
+   "lon": 86.615186,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Jambu",
+   "block": "Mahakalapada",
+   "lat": 20.434197,
+   "lon": 86.723167,
+   "type": "IRCS"
+  },
+  {
+   "name": "Jambu",
+   "block": "Mahakalapada",
+   "lat": 20.405746,
+   "lon": 86.715729,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kajalpota",
+   "block": "Mahakalapada",
+   "lat": 20.344222,
+   "lon": 86.749426,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kalatunga",
+   "block": "Mahakalapada",
+   "lat": 20.475778,
+   "lon": 86.679153,
+   "type": "MCS"
+  },
+  {
+   "name": "Kanpur",
+   "block": "Mahakalapada",
+   "lat": 20.446762,
+   "lon": 86.628738,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kansapal",
+   "block": "Mahakalapada",
+   "lat": 20.426989,
+   "lon": 86.690761,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Kansar",
+   "block": "Mahakalapada",
+   "lat": 20.452964,
+   "lon": 86.668015,
+   "type": "MCS"
+  },
+  {
+   "name": "Kharnasi",
+   "block": "Mahakalapada",
+   "lat": 20.353365,
+   "lon": 86.690751,
+   "type": "IRCS"
+  },
+  {
+   "name": "Khurusiapat",
+   "block": "Mahakalapada",
+   "lat": 20.337149,
+   "lon": 86.537313,
+   "type": "MCS"
+  },
+  {
+   "name": "Koratpanga",
+   "block": "Mahakalapada",
+   "lat": 20.348635,
+   "lon": 86.538339,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Kumharpada",
+   "block": "Mahakalapada",
+   "lat": 20.398448,
+   "lon": 86.600946,
+   "type": "IRCS"
+  },
+  {
+   "name": "Petchhola",
+   "block": "Mahakalapada",
+   "lat": 20.381607,
+   "lon": 86.657176,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Pitapat",
+   "block": "Mahakalapada",
+   "lat": 20.337532,
+   "lon": 86.653114,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Prabhakarpur",
+   "block": "Mahakalapada",
+   "lat": 20.401448,
+   "lon": 86.678204,
+   "type": "MCS"
+  },
+  {
+   "name": "Raidia",
+   "block": "Mahakalapada",
+   "lat": 20.453421,
+   "lon": 86.654999,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Ramnagar",
+   "block": "Mahakalapada",
+   "lat": 20.369704,
+   "lon": 86.679992,
+   "type": "MCS"
+  },
+  {
+   "name": "Ratpang",
+   "block": "Mahakalapada",
+   "lat": 20.501845,
+   "lon": 86.741887,
+   "type": "MCS"
+  },
+  {
+   "name": "Sana Rahama",
+   "block": "Mahakalapada",
+   "lat": 20.481491,
+   "lon": 86.638484,
+   "type": "MCS"
+  },
+  {
+   "name": "Sarumahin",
+   "block": "Mahakalapada",
+   "lat": 20.384979,
+   "lon": 86.639465,
+   "type": "IRCS"
+  },
+  {
+   "name": "Subala",
+   "block": "Mahakalapada",
+   "lat": 20.443264,
+   "lon": 86.639713,
+   "type": "MCS"
+  },
+  {
+   "name": "Subala",
+   "block": "Mahakalapada",
+   "lat": 20.365134,
+   "lon": 86.58644,
+   "type": "IRCS"
+  },
+  {
+   "name": "Suniti",
+   "block": "Mahakalapada",
+   "lat": 20.460759,
+   "lon": 86.709169,
+   "type": "MCS"
+  },
+  {
+   "name": "Tentuli Kandha",
+   "block": "Mahakalapada",
+   "lat": 20.368034,
+   "lon": 86.619785,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Teragaon",
+   "block": "Mahakalapada",
+   "lat": 20.395103,
+   "lon": 86.569274,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Tikarpanga",
+   "block": "Mahakalapada",
+   "lat": 20.35079,
+   "lon": 86.563765,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Tikhiri",
+   "block": "Mahakalapada",
+   "lat": 20.332964,
+   "lon": 86.483807,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Aitpur",
+   "block": "Marshaghai",
+   "lat": 20.463033,
+   "lon": 86.365855,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Balighai",
+   "block": "Marshaghai",
+   "lat": 20.347496,
+   "lon": 86.434309,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Beruhan",
+   "block": "Marshaghai",
+   "lat": 20.370946,
+   "lon": 86.461908,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Jalpok",
+   "block": "Marshaghai",
+   "lat": 20.455105,
+   "lon": 86.341366,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Mangrajpur",
+   "block": "Marshaghai",
+   "lat": 20.346697,
+   "lon": 86.44904,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Parkula",
+   "block": "Marshaghai",
+   "lat": 20.391515,
+   "lon": 86.449775,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Podana",
+   "block": "Marshaghai",
+   "lat": 20.399582,
+   "lon": 86.425359,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Badeipara",
+   "block": "Patamundai",
+   "lat": 20.508944,
+   "lon": 86.671536,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Balipatana",
+   "block": "Patamundai",
+   "lat": 20.585174,
+   "lon": 86.644772,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Billikanai",
+   "block": "Patamundai",
+   "lat": 20.523488,
+   "lon": 86.657703,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Dandisahi",
+   "block": "Patamundai",
+   "lat": 20.621444,
+   "lon": 86.477884,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Kajalabandha",
+   "block": "Patamundai",
+   "lat": 20.528527,
+   "lon": 86.679082,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kariapala",
+   "block": "Patamundai",
+   "lat": 20.533023,
+   "lon": 86.700583,
+   "type": "MCS"
+  },
+  {
+   "name": "Palpatana",
+   "block": "Patamundai",
+   "lat": 20.607209,
+   "lon": 86.626538,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Sankhapur",
+   "block": "Patamundai",
+   "lat": 20.56146,
+   "lon": 86.702909,
+   "type": "MCS"
+  },
+  {
+   "name": "Satkuria",
+   "block": "Patamundai",
+   "lat": 20.505046,
+   "lon": 86.652677,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bajarpur",
+   "block": "Rajkanika",
+   "lat": 20.731372,
+   "lon": 86.800072,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Gunthal",
+   "block": "Rajkanika",
+   "lat": 20.762396,
+   "lon": 86.640298,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Kanta",
+   "block": "Rajkanika",
+   "lat": 20.660781,
+   "lon": 86.758714,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Kolipur",
+   "block": "Rajkanika",
+   "lat": 20.687535,
+   "lon": 86.782811,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Padanipal",
+   "block": "Rajkanika",
+   "lat": 20.706444,
+   "lon": 86.586821,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Balarampur",
+   "block": "Rajnagar",
+   "lat": 20.633957,
+   "lon": 86.811617,
+   "type": "MCS"
+  },
+  {
+   "name": "Balarampur",
+   "block": "Rajnagar",
+   "lat": 20.562255,
+   "lon": 86.753018,
+   "type": "MCS"
+  },
+  {
+   "name": "Baobhadrapur",
+   "block": "Rajnagar",
+   "lat": 20.671429,
+   "lon": 86.842061,
+   "type": "IRCS"
+  },
+  {
+   "name": "Barakot",
+   "block": "Rajnagar",
+   "lat": 20.548859,
+   "lon": 86.719533,
+   "type": "MCS"
+  },
+  {
+   "name": "Bhekta",
+   "block": "Rajnagar",
+   "lat": 20.750345,
+   "lon": 86.932258,
+   "type": "MCS"
+  },
+  {
+   "name": "Bhitargarh",
+   "block": "Rajnagar",
+   "lat": 20.615219,
+   "lon": 86.782815,
+   "type": "MCS"
+  },
+  {
+   "name": "Bidhanankara",
+   "block": "Rajnagar",
+   "lat": 20.535158,
+   "lon": 86.753123,
+   "type": "MCS"
+  },
+  {
+   "name": "Brahmansahi",
+   "block": "Rajnagar",
+   "lat": 20.547278,
+   "lon": 86.76465,
+   "type": "IRCS"
+  },
+  {
+   "name": "Chabarakola",
+   "block": "Rajnagar",
+   "lat": 20.72291,
+   "lon": 86.941396,
+   "type": "IRCS"
+  },
+  {
+   "name": "Dalasahi",
+   "block": "Rajnagar",
+   "lat": 20.733831,
+   "lon": 86.971138,
+   "type": "MCS"
+  },
+  {
+   "name": "Dangmal",
+   "block": "Rajnagar",
+   "lat": 20.752784,
+   "lon": 86.857076,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Dhangmal",
+   "block": "Rajnagar",
+   "lat": 20.74085,
+   "lon": 86.868019,
+   "type": "MCS"
+  },
+  {
+   "name": "Gupti",
+   "block": "Rajnagar",
+   "lat": 20.652582,
+   "lon": 86.851807,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Jonesnagar",
+   "block": "Rajnagar",
+   "lat": 20.662633,
+   "lon": 86.845898,
+   "type": "IRCS"
+  },
+  {
+   "name": "Kaitha",
+   "block": "Rajnagar",
+   "lat": 20.571079,
+   "lon": 86.807794,
+   "type": "IRCS"
+  },
+  {
+   "name": "Kanakanagar",
+   "block": "Rajnagar",
+   "lat": 20.757534,
+   "lon": 86.905243,
+   "type": "IRCS"
+  },
+  {
+   "name": "Kandia",
+   "block": "Rajnagar",
+   "lat": 20.530488,
+   "lon": 86.723616,
+   "type": "IRCS"
+  },
+  {
+   "name": "Keruapal",
+   "block": "Rajnagar",
+   "lat": 20.727253,
+   "lon": 86.962751,
+   "type": "MCS"
+  },
+  {
+   "name": "Khamarsahi",
+   "block": "Rajnagar",
+   "lat": 20.75798,
+   "lon": 86.84788,
+   "type": "MCS"
+  },
+  {
+   "name": "Khasmunda",
+   "block": "Rajnagar",
+   "lat": 20.748009,
+   "lon": 86.97735,
+   "type": "MCS"
+  },
+  {
+   "name": "Krishnagarh",
+   "block": "Rajnagar",
+   "lat": 20.770679,
+   "lon": 86.86832,
+   "type": "IRCS"
+  },
+  {
+   "name": "Kurunti",
+   "block": "Rajnagar",
+   "lat": 20.570535,
+   "lon": 86.769962,
+   "type": "MCS"
+  },
+  {
+   "name": "Lakshminarayapur",
+   "block": "Rajnagar",
+   "lat": 20.606955,
+   "lon": 86.790912,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Loknathprasad",
+   "block": "Rajnagar",
+   "lat": 20.627705,
+   "lon": 86.772575,
+   "type": "MCS"
+  },
+  {
+   "name": "Mainsasor",
+   "block": "Rajnagar",
+   "lat": 20.572006,
+   "lon": 86.732042,
+   "type": "MCS"
+  },
+  {
+   "name": "Mangarajapur",
+   "block": "Rajnagar",
+   "lat": 20.556336,
+   "lon": 86.733536,
+   "type": "MCS"
+  },
+  {
+   "name": "Manjulapalli",
+   "block": "Rajnagar",
+   "lat": 20.74536,
+   "lon": 86.963973,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Nuagaon",
+   "block": "Rajnagar",
+   "lat": 20.634869,
+   "lon": 86.80708,
+   "type": "MCS"
+  },
+  {
+   "name": "Nuagaon",
+   "block": "Rajnagar",
+   "lat": 20.586021,
+   "lon": 86.821364,
+   "type": "MCS"
+  },
+  {
+   "name": "Ostia",
+   "block": "Rajnagar",
+   "lat": 20.62247,
+   "lon": 86.687661,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Padmalabhpur",
+   "block": "Rajnagar",
+   "lat": 20.676288,
+   "lon": 86.799636,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Paripanga",
+   "block": "Rajnagar",
+   "lat": 20.585665,
+   "lon": 86.794128,
+   "type": "IRCS"
+  },
+  {
+   "name": "Patapara",
+   "block": "Rajnagar",
+   "lat": 20.714267,
+   "lon": 86.905265,
+   "type": "MCS"
+  },
+  {
+   "name": "Penth",
+   "block": "Rajnagar",
+   "lat": 20.544306,
+   "lon": 86.788128,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Pokharia",
+   "block": "Rajnagar",
+   "lat": 20.591341,
+   "lon": 86.761779,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Prasanpur",
+   "block": "Rajnagar",
+   "lat": 20.549026,
+   "lon": 86.784998,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Rajgarh",
+   "block": "Rajnagar",
+   "lat": 20.602223,
+   "lon": 86.732712,
+   "type": "MCS"
+  },
+  {
+   "name": "Rajnagar",
+   "block": "Rajnagar",
+   "lat": 20.570166,
+   "lon": 86.728649,
+   "type": "MCS"
+  },
+  {
+   "name": "Rajrajeswaripur",
+   "block": "Rajnagar",
+   "lat": 20.618111,
+   "lon": 86.851961,
+   "type": "MCS"
+  },
+  {
+   "name": "Rejendarnarayanpur",
+   "block": "Rajnagar",
+   "lat": 20.732871,
+   "lon": 86.826786,
+   "type": "MCS"
+  },
+  {
+   "name": "Silapokhari",
+   "block": "Rajnagar",
+   "lat": 20.608625,
+   "lon": 86.820291,
+   "type": "MCS"
+  },
+  {
+   "name": "Surendrapur",
+   "block": "Rajnagar",
+   "lat": 20.730357,
+   "lon": 86.94223,
+   "type": "MCS"
+  },
+  {
+   "name": "Talchua",
+   "block": "Rajnagar",
+   "lat": 20.759396,
+   "lon": 86.943701,
+   "type": "MCS"
+  },
+  {
+   "name": "Tentaliyapal",
+   "block": "Rajnagar",
+   "lat": 20.516461,
+   "lon": 86.738284,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Ukilapara",
+   "block": "Rajnagar",
+   "lat": 20.641765,
+   "lon": 86.866118,
+   "type": "IRCS"
+  }
+ ],
+ "jagatsinghpur": [
+  {
+   "name": "Guamunda",
+   "block": "Ersama",
+   "lat": 20.219601,
+   "lon": 86.492096,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Dhanuharbelari",
+   "block": "Jagatsinghpur",
+   "lat": 19.989554,
+   "lon": 86.377725,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Marichipur",
+   "block": "Jagatsinghpur",
+   "lat": 20.026378,
+   "lon": 86.342179,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Tarasahi",
+   "block": "Jagatsinghpur",
+   "lat": 20.042897,
+   "lon": 86.268779,
+   "type": ""
+  },
+  {
+   "name": "Tarasahi",
+   "block": "Jagatsinghpur",
+   "lat": 20.046368,
+   "lon": 86.277673,
+   "type": ""
+  }
+ ],
+ "balasore": [
+  {
+   "name": "Abhana",
+   "block": "Bahanaga",
+   "lat": 21.249195,
+   "lon": 86.822036,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Anji",
+   "block": "Bahanaga",
+   "lat": 21.26434,
+   "lon": 86.792182,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Apitra",
+   "block": "Bahanaga",
+   "lat": 21.302017,
+   "lon": 86.818613,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Athilabaj",
+   "block": "Bahanaga",
+   "lat": 21.243507,
+   "lon": 86.821077,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Atishpur",
+   "block": "Bahanaga",
+   "lat": 21.292626,
+   "lon": 86.85983,
+   "type": "IRCS"
+  },
+  {
+   "name": "Bania Bishnupur",
+   "block": "Bahanaga",
+   "lat": 21.265693,
+   "lon": 86.819846,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Barajdeoli",
+   "block": "Bahanaga",
+   "lat": 21.242048,
+   "lon": 86.844041,
+   "type": "MCS"
+  },
+  {
+   "name": "Baripada",
+   "block": "Bahanaga",
+   "lat": 21.275309,
+   "lon": 86.846287,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bhila",
+   "block": "Bahanaga",
+   "lat": 21.301292,
+   "lon": 86.869037,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bijana",
+   "block": "Bahanaga",
+   "lat": 21.294655,
+   "lon": 86.775554,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Ganjina",
+   "block": "Bahanaga",
+   "lat": 21.32469,
+   "lon": 86.777857,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kharasahapur",
+   "block": "Bahanaga",
+   "lat": 21.245277,
+   "lon": 86.804492,
+   "type": "IRCS"
+  },
+  {
+   "name": "Kherang",
+   "block": "Bahanaga",
+   "lat": 21.282451,
+   "lon": 86.848158,
+   "type": "MCS"
+  },
+  {
+   "name": "Kochiakoili",
+   "block": "Bahanaga",
+   "lat": 21.264579,
+   "lon": 86.751981,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Korada",
+   "block": "Bahanaga",
+   "lat": 21.255651,
+   "lon": 86.767806,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Nuapur",
+   "block": "Bahanaga",
+   "lat": 21.314233,
+   "lon": 86.855373,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Paikasta",
+   "block": "Bahanaga",
+   "lat": 21.333458,
+   "lon": 86.826399,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Rahaniaganj",
+   "block": "Bahanaga",
+   "lat": 21.282813,
+   "lon": 86.803354,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Ramadha",
+   "block": "Bahanaga",
+   "lat": 21.255559,
+   "lon": 86.79428,
+   "type": "IRCS"
+  },
+  {
+   "name": "Ramtali",
+   "block": "Bahanaga",
+   "lat": 21.230282,
+   "lon": 86.840952,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Sahaspur",
+   "block": "Bahanaga",
+   "lat": 21.271644,
+   "lon": 86.793046,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Sahaspur",
+   "block": "Bahanaga",
+   "lat": 21.27365,
+   "lon": 86.79656,
+   "type": "CCI"
+  },
+  {
+   "name": "Ursal",
+   "block": "Bahanaga",
+   "lat": 21.335688,
+   "lon": 86.839863,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Alumara",
+   "block": "Balasore",
+   "lat": 21.566966,
+   "lon": 87.12744,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bahabalpur",
+   "block": "Balasore",
+   "lat": 21.513193,
+   "lon": 87.109601,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Balacha",
+   "block": "Balasore",
+   "lat": 21.504985,
+   "lon": 86.965876,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Bardhanpur",
+   "block": "Balasore",
+   "lat": 21.389479,
+   "lon": 86.934217,
+   "type": "MCS"
+  },
+  {
+   "name": "Barkia",
+   "block": "Balasore",
+   "lat": 21.413334,
+   "lon": 86.929828,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Binjha",
+   "block": "Balasore",
+   "lat": 21.591175,
+   "lon": 87.089584,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bishikadeipur",
+   "block": "Balasore",
+   "lat": 21.583001,
+   "lon": 87.125297,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Chaka Sartha",
+   "block": "Balasore",
+   "lat": 21.531268,
+   "lon": 87.107821,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Gopinathpur",
+   "block": "Balasore",
+   "lat": 21.512878,
+   "lon": 87.02324,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Gudu",
+   "block": "Balasore",
+   "lat": 21.416584,
+   "lon": 86.982569,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Hidigan",
+   "block": "Balasore",
+   "lat": 21.442733,
+   "lon": 86.992009,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Jaydeb Khasbe",
+   "block": "Balasore",
+   "lat": 21.39536,
+   "lon": 86.941067,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kalabudhi",
+   "block": "Balasore",
+   "lat": 21.577509,
+   "lon": 87.119268,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Kasaphal",
+   "block": "Balasore",
+   "lat": 21.533267,
+   "lon": 87.146909,
+   "type": "MCS"
+  },
+  {
+   "name": "Kauripur",
+   "block": "Balasore",
+   "lat": 21.560478,
+   "lon": 86.981273,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Kayakadala",
+   "block": "Balasore",
+   "lat": 21.476752,
+   "lon": 87.007371,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Korlisahi",
+   "block": "Balasore",
+   "lat": 21.578096,
+   "lon": 87.057805,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Mahapada",
+   "block": "Balasore",
+   "lat": 21.55388,
+   "lon": 87.028453,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Panchpara",
+   "block": "Balasore",
+   "lat": 21.561741,
+   "lon": 87.075197,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Parakhi",
+   "block": "Balasore",
+   "lat": 21.492602,
+   "lon": 87.055801,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Pokhara Sasan",
+   "block": "Balasore",
+   "lat": 21.445248,
+   "lon": 86.893344,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Pokharabad",
+   "block": "Balasore",
+   "lat": 21.496986,
+   "lon": 86.974619,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Ranasahi",
+   "block": "Balasore",
+   "lat": 21.452544,
+   "lon": 86.951102,
+   "type": "MCS"
+  },
+  {
+   "name": "Sangobra",
+   "block": "Balasore",
+   "lat": 21.54415,
+   "lon": 87.04555,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Sartha",
+   "block": "Balasore",
+   "lat": 21.574253,
+   "lon": 87.104327,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Sartha Chok",
+   "block": "Balasore",
+   "lat": 21.52232,
+   "lon": 87.11846,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Shrikana",
+   "block": "Balasore",
+   "lat": 21.461731,
+   "lon": 87.006218,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Sindhia",
+   "block": "Balasore",
+   "lat": 21.50747,
+   "lon": 86.949522,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Srikana",
+   "block": "Balasore",
+   "lat": 21.466899,
+   "lon": 87.052741,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Talaboroi",
+   "block": "Balasore",
+   "lat": 21.485406,
+   "lon": 87.067948,
+   "type": "MCS"
+  },
+  {
+   "name": "Aladiha",
+   "block": "Baliapala",
+   "lat": 21.583208,
+   "lon": 87.263652,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Andeula",
+   "block": "Baliapala",
+   "lat": 21.584178,
+   "lon": 87.236744,
+   "type": "IRCS"
+  },
+  {
+   "name": "Bagda",
+   "block": "Baliapala",
+   "lat": 21.587145,
+   "lon": 87.237931,
+   "type": "IRCS"
+  },
+  {
+   "name": "Balibili",
+   "block": "Baliapala",
+   "lat": 21.579143,
+   "lon": 87.253239,
+   "type": "IRCS"
+  },
+  {
+   "name": "Barhapal",
+   "block": "Baliapala",
+   "lat": 21.682142,
+   "lon": 87.299266,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Bhanupur",
+   "block": "Baliapala",
+   "lat": 21.575635,
+   "lon": 87.20414,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bulang",
+   "block": "Baliapala",
+   "lat": 21.595306,
+   "lon": 87.162652,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Chaumukh",
+   "block": "Baliapala",
+   "lat": 21.566008,
+   "lon": 87.31246,
+   "type": "MCS"
+  },
+  {
+   "name": "Chhalla",
+   "block": "Baliapala",
+   "lat": 21.5536,
+   "lon": 87.157024,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Dagara",
+   "block": "Baliapala",
+   "lat": 21.576416,
+   "lon": 87.281857,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Deula",
+   "block": "Baliapala",
+   "lat": 21.635041,
+   "lon": 87.250232,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Gobindapur",
+   "block": "Baliapala",
+   "lat": 21.582339,
+   "lon": 87.154595,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Ikrapal",
+   "block": "Baliapala",
+   "lat": 21.644485,
+   "lon": 87.333559,
+   "type": ""
+  },
+  {
+   "name": "Jamakunda",
+   "block": "Baliapala",
+   "lat": 21.620873,
+   "lon": 87.332394,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Jambhirai",
+   "block": "Baliapala",
+   "lat": 21.550231,
+   "lon": 87.17855,
+   "type": ""
+  },
+  {
+   "name": "Jambhiral",
+   "block": "Baliapala",
+   "lat": 21.547318,
+   "lon": 87.184696,
+   "type": "MCS"
+  },
+  {
+   "name": "Jamkunda",
+   "block": "Baliapala",
+   "lat": 21.635348,
+   "lon": 87.304366,
+   "type": "IRCS"
+  },
+  {
+   "name": "Jamkunda",
+   "block": "Baliapala",
+   "lat": 21.631621,
+   "lon": 87.333999,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Jamunashul",
+   "block": "Baliapala",
+   "lat": 21.549046,
+   "lon": 87.220314,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kakrapali",
+   "block": "Baliapala",
+   "lat": 21.560781,
+   "lon": 87.352068,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kalshimuli",
+   "block": "Baliapala",
+   "lat": 21.554109,
+   "lon": 87.183773,
+   "type": "MCS"
+  },
+  {
+   "name": "Kashipur",
+   "block": "Baliapala",
+   "lat": 21.585189,
+   "lon": 87.2673,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kataramahal",
+   "block": "Baliapala",
+   "lat": 21.567781,
+   "lon": 87.216765,
+   "type": "IRCS"
+  },
+  {
+   "name": "Kundoli",
+   "block": "Baliapala",
+   "lat": 21.595426,
+   "lon": 87.12728,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Mahabela",
+   "block": "Baliapala",
+   "lat": 21.603334,
+   "lon": 87.191561,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Mahapada",
+   "block": "Baliapala",
+   "lat": 21.584452,
+   "lon": 87.138738,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Nabhara",
+   "block": "Baliapala",
+   "lat": 21.604531,
+   "lon": 87.287903,
+   "type": "MCS"
+  },
+  {
+   "name": "Narayanpur",
+   "block": "Baliapala",
+   "lat": 21.563484,
+   "lon": 87.277103,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Narayanpur Panthal",
+   "block": "Baliapala",
+   "lat": 21.571641,
+   "lon": 87.27255,
+   "type": "MCS"
+  },
+  {
+   "name": "Pachupali",
+   "block": "Baliapala",
+   "lat": 21.567396,
+   "lon": 87.198619,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Pokamuri",
+   "block": "Baliapala",
+   "lat": 21.60942,
+   "lon": 87.29831,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Pratabpur",
+   "block": "Baliapala",
+   "lat": 21.599442,
+   "lon": 87.269146,
+   "type": "MCS"
+  },
+  {
+   "name": "Rasalpur",
+   "block": "Baliapala",
+   "lat": 21.664363,
+   "lon": 87.328025,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Saudihi",
+   "block": "Baliapala",
+   "lat": 21.581889,
+   "lon": 87.151099,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Shankhud",
+   "block": "Baliapala",
+   "lat": 21.604757,
+   "lon": 87.149253,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Suradiha",
+   "block": "Baliapala",
+   "lat": 21.591888,
+   "lon": 87.265625,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Junbalda",
+   "block": "Basta",
+   "lat": 21.734393,
+   "lon": 87.137221,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Kalnagari",
+   "block": "Basta",
+   "lat": 21.62096,
+   "lon": 87.15036,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Punskuli",
+   "block": "Basta",
+   "lat": 21.709393,
+   "lon": 87.168375,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Bara Sarisa",
+   "block": "Bhogarai",
+   "lat": 21.630561,
+   "lon": 87.459536,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bichitrapur",
+   "block": "Bhogarai",
+   "lat": 21.606185,
+   "lon": 87.41661,
+   "type": "MCS"
+  },
+  {
+   "name": "Dwarpatna",
+   "block": "Bhogarai",
+   "lat": 21.650708,
+   "lon": 87.388942,
+   "type": "IRCS"
+  },
+  {
+   "name": "Jairampur",
+   "block": "Bhogarai",
+   "lat": 21.641363,
+   "lon": 87.392801,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Jaleswarpur",
+   "block": "Bhogarai",
+   "lat": 21.676397,
+   "lon": 87.400666,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Kanthibhauniri",
+   "block": "Bhogarai",
+   "lat": 21.603863,
+   "lon": 87.409989,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Kanyanagari",
+   "block": "Bhogarai",
+   "lat": 21.607308,
+   "lon": 87.436447,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Kasimpur",
+   "block": "Bhogarai",
+   "lat": 21.653324,
+   "lon": 87.368138,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kirtania",
+   "block": "Bhogarai",
+   "lat": 21.580511,
+   "lon": 87.35646,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Krishnanagari",
+   "block": "Bhogarai",
+   "lat": 21.608691,
+   "lon": 87.442786,
+   "type": "MCS"
+  },
+  {
+   "name": "Kumbhirgadi",
+   "block": "Bhogarai",
+   "lat": 21.624706,
+   "lon": 87.354155,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Mahagaba",
+   "block": "Bhogarai",
+   "lat": 21.737414,
+   "lon": 87.413801,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Manunaga",
+   "block": "Bhogarai",
+   "lat": 21.667955,
+   "lon": 87.317725,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Nachinda",
+   "block": "Bhogarai",
+   "lat": 21.717475,
+   "lon": 87.327804,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Nilpura",
+   "block": "Bhogarai",
+   "lat": 21.683501,
+   "lon": 87.343076,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Pasarbindha",
+   "block": "Bhogarai",
+   "lat": 21.634438,
+   "lon": 87.396001,
+   "type": "IRCS"
+  },
+  {
+   "name": "Putina",
+   "block": "Bhogarai",
+   "lat": 21.718659,
+   "lon": 87.367264,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Ranakotha",
+   "block": "Bhogarai",
+   "lat": 21.604946,
+   "lon": 87.391111,
+   "type": "IRCS"
+  },
+  {
+   "name": "Sahabhajapur",
+   "block": "Bhogarai",
+   "lat": 21.624687,
+   "lon": 87.479865,
+   "type": "MCS"
+  },
+  {
+   "name": "Sialia",
+   "block": "Bhogarai",
+   "lat": 21.649632,
+   "lon": 87.40888,
+   "type": "IRCS"
+  },
+  {
+   "name": "Tengramari",
+   "block": "Bhogarai",
+   "lat": 21.640285,
+   "lon": 87.378957,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Udaipur",
+   "block": "Bhogarai",
+   "lat": 21.61575,
+   "lon": 87.480996,
+   "type": "MCS"
+  },
+  {
+   "name": "Baliapal",
+   "block": "Jaleswar",
+   "lat": 21.704124,
+   "lon": 87.220851,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Chormara",
+   "block": "Jaleswar",
+   "lat": 21.719568,
+   "lon": 87.216015,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Guagaria",
+   "block": "Jaleswar",
+   "lat": 21.867528,
+   "lon": 87.245622,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Jalakoparia",
+   "block": "Jaleswar",
+   "lat": 21.779146,
+   "lon": 87.305279,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Pundal",
+   "block": "Nilagiri",
+   "lat": 21.583603,
+   "lon": 86.774986,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Shyamsundarpur",
+   "block": "Oupada",
+   "lat": 21.399449,
+   "lon": 86.743733,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Bhimpur",
+   "block": "Remuna",
+   "lat": 21.354806,
+   "lon": 86.928002,
+   "type": "CCI"
+  },
+  {
+   "name": "Bolta",
+   "block": "Remuna",
+   "lat": 21.367902,
+   "lon": 86.849479,
+   "type": "MCS"
+  },
+  {
+   "name": "Ganeshwarpur",
+   "block": "Remuna",
+   "lat": 21.514913,
+   "lon": 86.891646,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Guruda",
+   "block": "Remuna",
+   "lat": 21.582114,
+   "lon": 86.850925,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Inchuri",
+   "block": "Remuna",
+   "lat": 21.325976,
+   "lon": 86.903838,
+   "type": "MCS"
+  },
+  {
+   "name": "Kantandapahi",
+   "block": "Remuna",
+   "lat": 21.344165,
+   "lon": 86.91952,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kashimpur",
+   "block": "Remuna",
+   "lat": 21.568923,
+   "lon": 86.866681,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Khatu",
+   "block": "Remuna",
+   "lat": 21.348238,
+   "lon": 86.9233,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Mahamadabad",
+   "block": "Remuna",
+   "lat": 21.337832,
+   "lon": 86.864222,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Maharajpur",
+   "block": "Remuna",
+   "lat": 21.366268,
+   "lon": 86.830458,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Mandagan",
+   "block": "Remuna",
+   "lat": 21.405403,
+   "lon": 86.868633,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Rehang",
+   "block": "Remuna",
+   "lat": 21.380413,
+   "lon": 86.872672,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Sankarpur",
+   "block": "Remuna",
+   "lat": 21.622544,
+   "lon": 86.879601,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Sholapari",
+   "block": "Remuna",
+   "lat": 21.35199,
+   "lon": 86.915394,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Shrijang",
+   "block": "Remuna",
+   "lat": 21.344442,
+   "lon": 86.868998,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Talpada",
+   "block": "Remuna",
+   "lat": 21.305905,
+   "lon": 86.871364,
+   "type": "MCS"
+  },
+  {
+   "name": "Tanra",
+   "block": "Remuna",
+   "lat": 21.358609,
+   "lon": 86.894354,
+   "type": "MCS"
+  },
+  {
+   "name": "Ankula",
+   "block": "Soro",
+   "lat": 21.217573,
+   "lon": 86.673869,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Baisibati",
+   "block": "Soro",
+   "lat": 21.200073,
+   "lon": 86.713175,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Belapur",
+   "block": "Soro",
+   "lat": 21.247909,
+   "lon": 86.745514,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Chandanpur",
+   "block": "Soro",
+   "lat": 21.222885,
+   "lon": 86.769676,
+   "type": "IRCS"
+  },
+  {
+   "name": "Guda",
+   "block": "Soro",
+   "lat": 21.180149,
+   "lon": 86.758149,
+   "type": "MCS"
+  },
+  {
+   "name": "Pakhar",
+   "block": "Soro",
+   "lat": 21.228656,
+   "lon": 86.730203,
+   "type": "CCI"
+  },
+  {
+   "name": "Tentei",
+   "block": "Soro",
+   "lat": 21.212459,
+   "lon": 86.736823,
+   "type": "CCI"
+  }
+ ],
+ "bhadrak": [
+  {
+   "name": "Aduan",
+   "block": "Basudevpur",
+   "lat": 21.148339,
+   "lon": 86.786776,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Arhia",
+   "block": "Basudevpur",
+   "lat": 21.155302,
+   "lon": 86.800303,
+   "type": "IRCS"
+  },
+  {
+   "name": "Artung",
+   "block": "Basudevpur",
+   "lat": 21.183162,
+   "lon": 86.767953,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bachhada",
+   "block": "Basudevpur",
+   "lat": 21.210146,
+   "lon": 86.797419,
+   "type": "MCS"
+  },
+  {
+   "name": "Balarampur",
+   "block": "Basudevpur",
+   "lat": 20.975906,
+   "lon": 86.821565,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bideipur",
+   "block": "Basudevpur",
+   "lat": 21.021061,
+   "lon": 86.817267,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Bijaypatana",
+   "block": "Basudevpur",
+   "lat": 20.96009,
+   "lon": 86.874368,
+   "type": "MCS"
+  },
+  {
+   "name": "Biros",
+   "block": "Basudevpur",
+   "lat": 21.032347,
+   "lon": 86.807543,
+   "type": "MCS"
+  },
+  {
+   "name": "Brajanandapur",
+   "block": "Basudevpur",
+   "lat": 20.995291,
+   "lon": 86.82358,
+   "type": "MCS"
+  },
+  {
+   "name": "Churamani",
+   "block": "Basudevpur",
+   "lat": 21.139187,
+   "lon": 86.782526,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Churamani",
+   "block": "Basudevpur",
+   "lat": 21.140845,
+   "lon": 86.763796,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Churamani Arhia",
+   "block": "Basudevpur",
+   "lat": 21.133351,
+   "lon": 86.798022,
+   "type": "IRCS"
+  },
+  {
+   "name": "Dhindachandi",
+   "block": "Basudevpur",
+   "lat": 21.078113,
+   "lon": 86.835989,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Gadi",
+   "block": "Basudevpur",
+   "lat": 21.015456,
+   "lon": 86.814917,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Gangamanishila",
+   "block": "Basudevpur",
+   "lat": 21.018696,
+   "lon": 86.816187,
+   "type": "IRCS"
+  },
+  {
+   "name": "Gobindapur",
+   "block": "Basudevpur",
+   "lat": 21.002882,
+   "lon": 86.814154,
+   "type": "MCS"
+  },
+  {
+   "name": "Gobindapur",
+   "block": "Basudevpur",
+   "lat": 21.002275,
+   "lon": 86.803574,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Habelisahi",
+   "block": "Basudevpur",
+   "lat": 20.988761,
+   "lon": 86.853252,
+   "type": "MCS"
+  },
+  {
+   "name": "Iram",
+   "block": "Basudevpur",
+   "lat": 21.153921,
+   "lon": 86.785624,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Jagannath",
+   "block": "Basudevpur",
+   "lat": 21.170374,
+   "lon": 86.757189,
+   "type": "MCS"
+  },
+  {
+   "name": "Juragadia",
+   "block": "Basudevpur",
+   "lat": 20.985255,
+   "lon": 86.788878,
+   "type": "MCS"
+  },
+  {
+   "name": "Kalidaspur",
+   "block": "Basudevpur",
+   "lat": 21.151762,
+   "lon": 86.721201,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Kersahi",
+   "block": "Basudevpur",
+   "lat": 21.021779,
+   "lon": 86.805723,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Khantkhuar",
+   "block": "Basudevpur",
+   "lat": 20.97468,
+   "lon": 86.780266,
+   "type": "IRCS"
+  },
+  {
+   "name": "Khedualpur",
+   "block": "Basudevpur",
+   "lat": 20.96951,
+   "lon": 86.821982,
+   "type": ""
+  },
+  {
+   "name": "Kismat Krushnapur",
+   "block": "Basudevpur",
+   "lat": 21.097165,
+   "lon": 86.810629,
+   "type": "MCS"
+  },
+  {
+   "name": "Kismat Krushnapur",
+   "block": "Basudevpur",
+   "lat": 21.107241,
+   "lon": 86.797968,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Krushnapur",
+   "block": "Basudevpur",
+   "lat": 21.069597,
+   "lon": 86.799731,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Krushnapur",
+   "block": "Basudevpur",
+   "lat": 21.079247,
+   "lon": 86.798098,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kumarpur",
+   "block": "Basudevpur",
+   "lat": 21.197842,
+   "lon": 86.801651,
+   "type": "MCS"
+  },
+  {
+   "name": "Kumirgaria",
+   "block": "Basudevpur",
+   "lat": 21.169813,
+   "lon": 86.77611,
+   "type": "MCS"
+  },
+  {
+   "name": "Lakshmiprasad",
+   "block": "Basudevpur",
+   "lat": 21.020094,
+   "lon": 86.771288,
+   "type": "MCS"
+  },
+  {
+   "name": "Lokshmiprasadpur",
+   "block": "Basudevpur",
+   "lat": 21.042921,
+   "lon": 86.761942,
+   "type": "MCS"
+  },
+  {
+   "name": "Lunga",
+   "block": "Basudevpur",
+   "lat": 21.073189,
+   "lon": 86.698702,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Machhuaghai Bada",
+   "block": "Basudevpur",
+   "lat": 21.003978,
+   "lon": 86.789148,
+   "type": "MCS"
+  },
+  {
+   "name": "Mangarh",
+   "block": "Basudevpur",
+   "lat": 21.039799,
+   "lon": 86.761881,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Mishrapur",
+   "block": "Basudevpur",
+   "lat": 21.032345,
+   "lon": 86.708765,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Mohanpur",
+   "block": "Basudevpur",
+   "lat": 21.20697,
+   "lon": 86.825159,
+   "type": "IRCS"
+  },
+  {
+   "name": "Nuagan",
+   "block": "Basudevpur",
+   "lat": 21.170273,
+   "lon": 86.792666,
+   "type": "MCS"
+  },
+  {
+   "name": "Olagada",
+   "block": "Basudevpur",
+   "lat": 21.161539,
+   "lon": 86.76903,
+   "type": "IRCS"
+  },
+  {
+   "name": "Padhuan",
+   "block": "Basudevpur",
+   "lat": 21.200991,
+   "lon": 86.802706,
+   "type": "MCS"
+  },
+  {
+   "name": "Patana Mishrapur",
+   "block": "Basudevpur",
+   "lat": 21.032578,
+   "lon": 86.720942,
+   "type": "MCS"
+  },
+  {
+   "name": "Radhakantapur",
+   "block": "Basudevpur",
+   "lat": 21.109284,
+   "lon": 86.791979,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Rajgharpokhari",
+   "block": "Basudevpur",
+   "lat": 21.01446,
+   "lon": 86.776041,
+   "type": "MCS"
+  },
+  {
+   "name": "Ratang",
+   "block": "Basudevpur",
+   "lat": 21.173899,
+   "lon": 86.711192,
+   "type": "IRCS"
+  },
+  {
+   "name": "Sana Krushanapur",
+   "block": "Basudevpur",
+   "lat": 21.079714,
+   "lon": 86.807693,
+   "type": "CMRF"
+  },
+  {
+   "name": "Sana Krushanapur",
+   "block": "Basudevpur",
+   "lat": 21.077937,
+   "lon": 86.822048,
+   "type": "IRCS"
+  },
+  {
+   "name": "Sankharo",
+   "block": "Basudevpur",
+   "lat": 21.191616,
+   "lon": 86.794225,
+   "type": "MCS"
+  },
+  {
+   "name": "Sarangpur",
+   "block": "Basudevpur",
+   "lat": 21.221562,
+   "lon": 86.78467,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Sarapokhari Adi",
+   "block": "Basudevpur",
+   "lat": 21.200252,
+   "lon": 86.799124,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Sudarshanpur",
+   "block": "Basudevpur",
+   "lat": 21.173582,
+   "lon": 86.754534,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Uhar",
+   "block": "Basudevpur",
+   "lat": 21.17364,
+   "lon": 86.794932,
+   "type": "IRCS"
+  },
+  {
+   "name": "Daisingha",
+   "block": "Bhadrak",
+   "lat": 21.121502,
+   "lon": 86.428927,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Susua",
+   "block": "Bhadrak",
+   "lat": 20.987377,
+   "lon": 86.534922,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Bandalo",
+   "block": "Bhandaripokhari",
+   "lat": 21.003145,
+   "lon": 86.294405,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Biroli",
+   "block": "Bhandaripokhari",
+   "lat": 20.87031,
+   "lon": 86.368601,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Jalahar",
+   "block": "Bhandaripokhari",
+   "lat": 20.885321,
+   "lon": 86.352953,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Maninathpur",
+   "block": "Bhandaripokhari",
+   "lat": 20.859997,
+   "lon": 86.345507,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Charigan",
+   "block": "Bonth",
+   "lat": 21.182469,
+   "lon": 86.406069,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Ankapara",
+   "block": "Chandabali",
+   "lat": 20.913252,
+   "lon": 86.80279,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bada Tilanchi",
+   "block": "Chandabali",
+   "lat": 20.848267,
+   "lon": 86.842219,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Baincha",
+   "block": "Chandabali",
+   "lat": 20.921368,
+   "lon": 86.895731,
+   "type": "IRCS"
+  },
+  {
+   "name": "Baliarpur",
+   "block": "Chandabali",
+   "lat": 20.866427,
+   "lon": 86.892046,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Barakula",
+   "block": "Chandabali",
+   "lat": 20.890925,
+   "lon": 86.820872,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Bidyutpravanagar",
+   "block": "Chandabali",
+   "lat": 20.805894,
+   "lon": 86.931226,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Biriadiha",
+   "block": "Chandabali",
+   "lat": 20.922409,
+   "lon": 86.804247,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Chanipai",
+   "block": "Chandabali",
+   "lat": 20.826098,
+   "lon": 86.942515,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Chardia",
+   "block": "Chandabali",
+   "lat": 20.802542,
+   "lon": 86.846835,
+   "type": "IRCS"
+  },
+  {
+   "name": "Chhenak",
+   "block": "Chandabali",
+   "lat": 20.861014,
+   "lon": 86.864748,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Dasingha",
+   "block": "Chandabali",
+   "lat": 20.818123,
+   "lon": 86.944422,
+   "type": "MCS"
+  },
+  {
+   "name": "Gangadharpur",
+   "block": "Chandabali",
+   "lat": 20.853356,
+   "lon": 86.879053,
+   "type": "MCS"
+  },
+  {
+   "name": "Gourprasad",
+   "block": "Chandabali",
+   "lat": 20.861046,
+   "lon": 86.935831,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Guania",
+   "block": "Chandabali",
+   "lat": 20.83874,
+   "lon": 86.881647,
+   "type": "IRCS"
+  },
+  {
+   "name": "Harishpur",
+   "block": "Chandabali",
+   "lat": 20.818463,
+   "lon": 86.85644,
+   "type": "MCS"
+  },
+  {
+   "name": "Jantuali",
+   "block": "Chandabali",
+   "lat": 20.891293,
+   "lon": 86.849902,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Jharkoti",
+   "block": "Chandabali",
+   "lat": 20.818064,
+   "lon": 86.879946,
+   "type": "IRCS"
+  },
+  {
+   "name": "Kaduanasi",
+   "block": "Chandabali",
+   "lat": 20.943424,
+   "lon": 86.844302,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kanakprasad",
+   "block": "Chandabali",
+   "lat": 20.850262,
+   "lon": 86.938364,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Kanriapal",
+   "block": "Chandabali",
+   "lat": 20.747881,
+   "lon": 86.785914,
+   "type": "IRCS"
+  },
+  {
+   "name": "Karandimal",
+   "block": "Chandabali",
+   "lat": 20.850144,
+   "lon": 86.722391,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Karanjamal",
+   "block": "Chandabali",
+   "lat": 20.891175,
+   "lon": 86.912363,
+   "type": "MCS"
+  },
+  {
+   "name": "Khodalpokhari",
+   "block": "Chandabali",
+   "lat": 20.918272,
+   "lon": 86.830408,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Koilekha",
+   "block": "Chandabali",
+   "lat": 20.834091,
+   "lon": 86.658869,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Krushnaprasad",
+   "block": "Chandabali",
+   "lat": 20.840002,
+   "lon": 86.942873,
+   "type": "MCS"
+  },
+  {
+   "name": "Krushnapur",
+   "block": "Chandabali",
+   "lat": 20.847319,
+   "lon": 86.691157,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Mota",
+   "block": "Chandabali",
+   "lat": 20.852801,
+   "lon": 86.764315,
+   "type": "IRCS"
+  },
+  {
+   "name": "Nachhipur",
+   "block": "Chandabali",
+   "lat": 20.898758,
+   "lon": 86.868674,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Narsinghpurdiha",
+   "block": "Chandabali",
+   "lat": 20.819389,
+   "lon": 86.894485,
+   "type": "MCS"
+  },
+  {
+   "name": "Paiksahi",
+   "block": "Chandabali",
+   "lat": 20.804764,
+   "lon": 86.900133,
+   "type": "MCS"
+  },
+  {
+   "name": "Sendagada",
+   "block": "Chandabali",
+   "lat": 20.951196,
+   "lon": 86.81845,
+   "type": "IRCS"
+  },
+  {
+   "name": "Shailendrapali",
+   "block": "Chandabali",
+   "lat": 20.823033,
+   "lon": 86.859843,
+   "type": "MCS"
+  },
+  {
+   "name": "Sundaripokhari",
+   "block": "Chandabali",
+   "lat": 20.911577,
+   "lon": 86.830965,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Tentulidihi",
+   "block": "Chandabali",
+   "lat": 20.799507,
+   "lon": 86.694125,
+   "type": "IRCS"
+  },
+  {
+   "name": "Uramal",
+   "block": "Chandabali",
+   "lat": 20.816098,
+   "lon": 86.923998,
+   "type": "MCS"
+  },
+  {
+   "name": "Urasahi",
+   "block": "Chandabali",
+   "lat": 20.777205,
+   "lon": 86.808176,
+   "type": "IRCS"
+  },
+  {
+   "name": "Uttarasahi",
+   "block": "Chandabali",
+   "lat": 20.907387,
+   "lon": 86.870132,
+   "type": ""
+  },
+  {
+   "name": "Arjunpur",
+   "block": "Dhamanagar",
+   "lat": 20.872132,
+   "lon": 86.495608,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Bamakura",
+   "block": "Dhamanagar",
+   "lat": 20.909203,
+   "lon": 86.555941,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Bayangdihi",
+   "block": "Dhamanagar",
+   "lat": 20.919216,
+   "lon": 86.50545,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Padhani",
+   "block": "Dhamanagar",
+   "lat": 20.874182,
+   "lon": 86.476755,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Dahapania",
+   "block": "Tihidi",
+   "lat": 20.957739,
+   "lon": 86.602267,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Saya",
+   "block": "Tihidi",
+   "lat": 21.018942,
+   "lon": 86.649889,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Tiarisahi",
+   "block": "Tihidi",
+   "lat": 20.900187,
+   "lon": 86.664767,
+   "type": "MFS(St.Plan)"
+  }
+ ],
+ "ganjam": [
+  {
+   "name": "Jagadalpur",
+   "block": "Aska",
+   "lat": 19.672564,
+   "lon": 84.651926,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Maharajapur",
+   "block": "Aska",
+   "lat": 19.681029,
+   "lon": 84.659052,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Kesapur",
+   "block": "Balasore Sadar",
+   "lat": 19.613211,
+   "lon": 85.130387,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Mandar",
+   "block": "Belaguntha",
+   "lat": 19.873225,
+   "lon": 84.621836,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Turumu",
+   "block": "Bhanjanagar",
+   "lat": 20.046074,
+   "lon": 84.616228,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Krushnasharanapur",
+   "block": "Buguda",
+   "lat": 19.816075,
+   "lon": 84.791827,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Agastinuagan",
+   "block": "Chatrapur",
+   "lat": 19.371617,
+   "lon": 85.033238,
+   "type": "MCS"
+  },
+  {
+   "name": "Bandara",
+   "block": "Chatrapur",
+   "lat": 19.264005,
+   "lon": 84.910926,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Barha Aryapalli",
+   "block": "Chatrapur",
+   "lat": 19.314635,
+   "lon": 84.973351,
+   "type": "MCS"
+  },
+  {
+   "name": "Goba",
+   "block": "Chatrapur",
+   "lat": 19.484961,
+   "lon": 84.949396,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Kanamana",
+   "block": "Chatrapur",
+   "lat": 19.320746,
+   "lon": 84.962185,
+   "type": "MCS"
+  },
+  {
+   "name": "Karapalli",
+   "block": "Chatrapur",
+   "lat": 19.358878,
+   "lon": 84.915604,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Matikhal",
+   "block": "Chatrapur",
+   "lat": 19.313711,
+   "lon": 84.948872,
+   "type": "MCS"
+  },
+  {
+   "name": "Naliyanuagan",
+   "block": "Chatrapur",
+   "lat": 19.355153,
+   "lon": 85.039785,
+   "type": "MCS"
+  },
+  {
+   "name": "Sana Aryapalli",
+   "block": "Chatrapur",
+   "lat": 19.319709,
+   "lon": 84.98057,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Upalaputi",
+   "block": "Chatrapur",
+   "lat": 19.281828,
+   "lon": 84.910094,
+   "type": "MCS"
+  },
+  {
+   "name": "Alarapur",
+   "block": "Chikiti",
+   "lat": 19.136485,
+   "lon": 84.781565,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Chandanabarha",
+   "block": "Chikiti",
+   "lat": 19.142507,
+   "lon": 84.785072,
+   "type": "MCS"
+  },
+  {
+   "name": "Ekasing",
+   "block": "Chikiti",
+   "lat": 19.162133,
+   "lon": 84.799536,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Gobindapur",
+   "block": "Chikiti",
+   "lat": 19.154438,
+   "lon": 84.754071,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Nua Maisanapur",
+   "block": "Chikiti",
+   "lat": 19.1642,
+   "lon": 84.589419,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Patisunapur",
+   "block": "Chikiti",
+   "lat": 19.089211,
+   "lon": 84.766824,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Puruna Maisanapur",
+   "block": "Chikiti",
+   "lat": 19.173413,
+   "lon": 84.590266,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Sunapur",
+   "block": "Chikiti",
+   "lat": 19.122534,
+   "lon": 84.774345,
+   "type": "IRCS"
+  },
+  {
+   "name": "Bhismagiri",
+   "block": "Digapahandi",
+   "lat": 19.385927,
+   "lon": 84.470705,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Dhanarashi",
+   "block": "Digapahandi",
+   "lat": 19.233637,
+   "lon": 84.534365,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Golanda",
+   "block": "Digapahandi",
+   "lat": 19.309744,
+   "lon": 84.475443,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Nuaparha",
+   "block": "Digapahandi",
+   "lat": 19.237391,
+   "lon": 84.515398,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Alyabad",
+   "block": "Ganjam",
+   "lat": 19.404072,
+   "lon": 85.021404,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Arunpur",
+   "block": "Ganjam",
+   "lat": 19.453771,
+   "lon": 85.127794,
+   "type": "MCS"
+  },
+  {
+   "name": "Baharapalli",
+   "block": "Ganjam",
+   "lat": 19.485326,
+   "lon": 85.069167,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Barada",
+   "block": "Ganjam",
+   "lat": 19.434267,
+   "lon": 85.000758,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Barigan",
+   "block": "Ganjam",
+   "lat": 19.43547,
+   "lon": 85.055838,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Belpara",
+   "block": "Ganjam",
+   "lat": 19.446307,
+   "lon": 85.080167,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Binchanapalli",
+   "block": "Ganjam",
+   "lat": 19.473931,
+   "lon": 85.119634,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Binchanpalli",
+   "block": "Ganjam",
+   "lat": 19.386888,
+   "lon": 85.064092,
+   "type": "CMRF"
+  },
+  {
+   "name": "Gokhurkuda",
+   "block": "Ganjam",
+   "lat": 19.394195,
+   "lon": 85.083073,
+   "type": "MCS"
+  },
+  {
+   "name": "Humma",
+   "block": "Ganjam",
+   "lat": 19.439067,
+   "lon": 85.071545,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Jagannathpur",
+   "block": "Ganjam",
+   "lat": 19.418417,
+   "lon": 85.0353,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Jhatipadar",
+   "block": "Ganjam",
+   "lat": 19.439003,
+   "lon": 85.10413,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Kalayanpur",
+   "block": "Ganjam",
+   "lat": 19.397135,
+   "lon": 85.038749,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Kantiagar",
+   "block": "Ganjam",
+   "lat": 19.416896,
+   "lon": 85.098136,
+   "type": "MCS"
+  },
+  {
+   "name": "Karpara",
+   "block": "Ganjam",
+   "lat": 19.405615,
+   "lon": 85.016169,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Lunguri",
+   "block": "Ganjam",
+   "lat": 19.430462,
+   "lon": 85.044568,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Madhurchuan",
+   "block": "Ganjam",
+   "lat": 19.500672,
+   "lon": 85.115238,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Math Makundapur",
+   "block": "Ganjam",
+   "lat": 19.473526,
+   "lon": 85.094692,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "New Podampeta",
+   "block": "Ganjam",
+   "lat": 19.441394,
+   "lon": 85.126535,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Niladripuram",
+   "block": "Ganjam",
+   "lat": 19.391582,
+   "lon": 85.01898,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Pollango",
+   "block": "Ganjam",
+   "lat": 19.508203,
+   "lon": 85.028992,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Proyagi",
+   "block": "Ganjam",
+   "lat": 19.470898,
+   "lon": 85.160212,
+   "type": "MCS"
+  },
+  {
+   "name": "Puranabandh",
+   "block": "Ganjam",
+   "lat": 19.382533,
+   "lon": 85.07126,
+   "type": "MCS"
+  },
+  {
+   "name": "Raghunathpur",
+   "block": "Ganjam",
+   "lat": 19.440928,
+   "lon": 85.094901,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Rajpur",
+   "block": "Ganjam",
+   "lat": 19.39759,
+   "lon": 85.002639,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Santoshpur",
+   "block": "Ganjam",
+   "lat": 19.467121,
+   "lon": 85.010195,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Satuli",
+   "block": "Ganjam",
+   "lat": 19.475835,
+   "lon": 85.029703,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Shatrushol",
+   "block": "Ganjam",
+   "lat": 19.455887,
+   "lon": 85.063594,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Alipur",
+   "block": "Hinjilikut",
+   "lat": 19.490952,
+   "lon": 84.797167,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Buruparha",
+   "block": "Hinjilikut",
+   "lat": 19.494467,
+   "lon": 84.715182,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Kharirha",
+   "block": "Hinjilikut",
+   "lat": 19.498959,
+   "lon": 84.76282,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Kodra",
+   "block": "Hinjilikut",
+   "lat": 19.503681,
+   "lon": 84.736536,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Ralaba",
+   "block": "Hinjilikut",
+   "lat": 19.475653,
+   "lon": 84.801562,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Babarapalli",
+   "block": "Khallikote",
+   "lat": 19.549976,
+   "lon": 85.103542,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Badopalli",
+   "block": "Khallikote",
+   "lat": 19.536059,
+   "lon": 85.061828,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Bania",
+   "block": "Khallikote",
+   "lat": 19.556526,
+   "lon": 85.014513,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Bharampur",
+   "block": "Khallikote",
+   "lat": 19.615248,
+   "lon": 85.035454,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Dhimiriya",
+   "block": "Khallikote",
+   "lat": 19.57213,
+   "lon": 85.089749,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Gadakasta",
+   "block": "Khallikote",
+   "lat": 19.615706,
+   "lon": 85.043473,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Konoka",
+   "block": "Khallikote",
+   "lat": 19.564373,
+   "lon": 85.115233,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Kumarsingi",
+   "block": "Khallikote",
+   "lat": 19.705687,
+   "lon": 85.130648,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Manapalli",
+   "block": "Khallikote",
+   "lat": 19.664304,
+   "lon": 85.08146,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Mukundapur",
+   "block": "Khallikote",
+   "lat": 19.53464,
+   "lon": 85.010798,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Palodhuapalli",
+   "block": "Khallikote",
+   "lat": 19.580976,
+   "lon": 85.086184,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Sabilia",
+   "block": "Khallikote",
+   "lat": 19.538506,
+   "lon": 85.097072,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Somala",
+   "block": "Khallikote",
+   "lat": 19.57008,
+   "lon": 85.139783,
+   "type": "ICZMP"
+  },
+  {
+   "name": "Tulsipur",
+   "block": "Khallikote",
+   "lat": 19.628704,
+   "lon": 85.068722,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Nuapalli",
+   "block": "Kodala",
+   "lat": 19.653709,
+   "lon": 85.036208,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Tentulia",
+   "block": "Kodala",
+   "lat": 19.657988,
+   "lon": 84.744387,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Antirigan",
+   "block": "Purushottampur",
+   "lat": 19.49993,
+   "lon": 84.811556,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Balia",
+   "block": "Purushottampur",
+   "lat": 19.494927,
+   "lon": 84.952547,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Bherasingi",
+   "block": "Purushottampur",
+   "lat": 19.534617,
+   "lon": 84.745257,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Cobindapur",
+   "block": "Purushottampur",
+   "lat": 19.490534,
+   "lon": 84.905459,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Pratapur",
+   "block": "Purushottampur",
+   "lat": 19.491583,
+   "lon": 84.932169,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Shama",
+   "block": "Purushottampur",
+   "lat": 19.570252,
+   "lon": 84.926119,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Sunathara",
+   "block": "Purushottampur",
+   "lat": 19.433945,
+   "lon": 84.917666,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Antrabatia",
+   "block": "Rangeilunda",
+   "lat": 19.293783,
+   "lon": 84.889117,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Dayanidhipeta",
+   "block": "Rangeilunda",
+   "lat": 19.145236,
+   "lon": 84.775125,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Dhepi Nuaparha",
+   "block": "Rangeilunda",
+   "lat": 19.180301,
+   "lon": 84.798929,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Godigan",
+   "block": "Rangeilunda",
+   "lat": 19.217865,
+   "lon": 84.831732,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Gopalpur",
+   "block": "Rangeilunda",
+   "lat": 19.258573,
+   "lon": 84.906856,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Gunapalli",
+   "block": "Rangeilunda",
+   "lat": 19.215161,
+   "lon": 84.799736,
+   "type": "MCS(CMRF)"
+  },
+  {
+   "name": "Haripur",
+   "block": "Rangeilunda",
+   "lat": 19.268415,
+   "lon": 84.911378,
+   "type": "MCS"
+  },
+  {
+   "name": "Markandi",
+   "block": "Rangeilunda",
+   "lat": 19.189548,
+   "lon": 84.827912,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Mendrajapur",
+   "block": "Rangeilunda",
+   "lat": 19.184856,
+   "lon": 84.794255,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Nua Bakshipalli",
+   "block": "Rangeilunda",
+   "lat": 19.249285,
+   "lon": 84.894106,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Nua Golabandha",
+   "block": "Rangeilunda",
+   "lat": 19.223387,
+   "lon": 84.868587,
+   "type": "NCRMP-AF"
+  },
+  {
+   "name": "Tulu",
+   "block": "Rangeilunda",
+   "lat": 19.202206,
+   "lon": 84.810555,
+   "type": "MCS"
+  },
+  {
+   "name": "Balaramapalli",
+   "block": "Seragarh",
+   "lat": 19.454273,
+   "lon": 84.70077,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Brahmanachhal",
+   "block": "Seragarh",
+   "lat": 19.542338,
+   "lon": 84.72674,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Kanjana",
+   "block": "Seragarh",
+   "lat": 19.520043,
+   "lon": 84.757731,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Santoshapu",
+   "block": "Seragarh",
+   "lat": 19.532255,
+   "lon": 84.729655,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Tograma",
+   "block": "Seragarh",
+   "lat": 19.530836,
+   "lon": 84.740862,
+   "type": "MFS(St.Plan)"
+  },
+  {
+   "name": "Amrutulu",
+   "block": "Sorada",
+   "lat": 19.71723,
+   "lon": 84.405459,
+   "type": "MFS(St.Plan)"
+  }
+ ],
+ "khordha": [
+  {
+   "name": "Balianta",
+   "block": "Balianta",
+   "lat": 20.298882,
+   "lon": 85.896456,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Gotalgram",
+   "block": "Balianta",
+   "lat": 20.245522,
+   "lon": 85.902087,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Prataprudrapur",
+   "block": "Balianta",
+   "lat": 20.228523,
+   "lon": 85.980555,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Uparsahi",
+   "block": "Balianta",
+   "lat": 20.222718,
+   "lon": 85.991991,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Garia",
+   "block": "Balipatna",
+   "lat": 20.122059,
+   "lon": 85.941355,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Kantaparha",
+   "block": "Balipatna",
+   "lat": 20.11343,
+   "lon": 86.066843,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Kurunjipur",
+   "block": "Balipatna",
+   "lat": 20.127953,
+   "lon": 85.968462,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Pubagar",
+   "block": "Balipatna",
+   "lat": 20.139607,
+   "lon": 85.987757,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Bhapur",
+   "block": "Banapur",
+   "lat": 19.826956,
+   "lon": 85.14641,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Binjhala",
+   "block": "Banapur",
+   "lat": 19.847586,
+   "lon": 85.22233,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Dhuanla",
+   "block": "Banapur",
+   "lat": 19.773543,
+   "lon": 85.215533,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Gotapalli",
+   "block": "Banapur",
+   "lat": 19.853995,
+   "lon": 85.2493,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Harichandanpur",
+   "block": "Banapur",
+   "lat": 19.851147,
+   "lon": 85.225024,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Kuloi",
+   "block": "Banapur",
+   "lat": 19.847113,
+   "lon": 85.252917,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Manikpur",
+   "block": "Banapur",
+   "lat": 19.77516,
+   "lon": 85.127955,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Moramor",
+   "block": "Banapur",
+   "lat": 19.862303,
+   "lon": 85.272173,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Narendrapur",
+   "block": "Banapur",
+   "lat": 19.814224,
+   "lon": 85.182192,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Punjiama Sasan",
+   "block": "Banapur",
+   "lat": 19.769421,
+   "lon": 85.136736,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Lokhathpur",
+   "block": "Begunia",
+   "lat": 20.218468,
+   "lon": 85.530154,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Poradiha",
+   "block": "Begunia",
+   "lat": 20.25396,
+   "lon": 85.509119,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Kairi",
+   "block": "Bhubaneswar",
+   "lat": 20.169317,
+   "lon": 85.829371,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Baniabandha",
+   "block": "Chilika",
+   "lat": 19.809403,
+   "lon": 85.321429,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Baradihi",
+   "block": "Chilika",
+   "lat": 19.839064,
+   "lon": 85.356058,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Beribar",
+   "block": "Chilika",
+   "lat": 19.85344,
+   "lon": 85.338679,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Bhagabatipur",
+   "block": "Chilika",
+   "lat": 19.859505,
+   "lon": 85.382418,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Borasahi",
+   "block": "Chilika",
+   "lat": 19.717509,
+   "lon": 85.167734,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Brahman Kosadihi",
+   "block": "Chilika",
+   "lat": 19.794197,
+   "lon": 85.235064,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Haripur",
+   "block": "Chilika",
+   "lat": 19.82539,
+   "lon": 85.315058,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Mansinghpur",
+   "block": "Chilika",
+   "lat": 19.855667,
+   "lon": 85.383936,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Parabal",
+   "block": "Chilika",
+   "lat": 19.834692,
+   "lon": 85.332987,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Santasinghpur",
+   "block": "Chilika",
+   "lat": 19.796473,
+   "lon": 85.251803,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Angaraparha",
+   "block": "Jatani",
+   "lat": 20.257761,
+   "lon": 85.647799,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Baranuagan",
+   "block": "Jatani",
+   "lat": 20.168623,
+   "lon": 85.69472,
+   "type": "NCRMP"
+  },
+  {
+   "name": "Tirimal",
+   "block": "Jatani",
+   "lat": 20.090946,
+   "lon": 85.66199,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Balapur",
+   "block": "Khurda",
+   "lat": 20.035683,
+   "lon": 85.590647,
+   "type": "MFS(CMRF)"
+  },
+  {
+   "name": "Areri",
+   "block": "Tangi",
+   "lat": 19.971304,
+   "lon": 85.555956,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Balipatpur",
+   "block": "Tangi",
+   "lat": 19.937941,
+   "lon": 85.488512,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Bhusandapur",
+   "block": "Tangi",
+   "lat": 19.953736,
+   "lon": 85.474985,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Jaimangalpur",
+   "block": "Tangi",
+   "lat": 19.871023,
+   "lon": 85.320284,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Kantalbal",
+   "block": "Tangi",
+   "lat": 19.947762,
+   "lon": 85.474017,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Kartiasahi",
+   "block": "Tangi",
+   "lat": 19.915762,
+   "lon": 85.435412,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Katiakut Colony",
+   "block": "Tangi",
+   "lat": 19.936375,
+   "lon": 85.455386,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Manglajori",
+   "block": "Tangi",
+   "lat": 19.916174,
+   "lon": 85.428278,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Nayagarh",
+   "block": "Tangi",
+   "lat": 19.97151,
+   "lon": 85.491228,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Nuagaon",
+   "block": "Tangi",
+   "lat": 19.938017,
+   "lon": 85.494257,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Orada",
+   "block": "Tangi",
+   "lat": 19.915932,
+   "lon": 85.364588,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Ramachandrapur",
+   "block": "Tangi",
+   "lat": 19.949106,
+   "lon": 85.358195,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Ratanpur",
+   "block": "Tangi",
+   "lat": 19.86524,
+   "lon": 85.375834,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Saraswatinagar",
+   "block": "Tangi",
+   "lat": 19.916998,
+   "lon": 85.53091,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Singarama",
+   "block": "Tangi",
+   "lat": 19.926289,
+   "lon": 85.341685,
+   "type": "NCRMP_AF"
+  },
+  {
+   "name": "Sundarpur",
+   "block": "Tangi",
+   "lat": 19.936821,
+   "lon": 85.442843,
+   "type": "NCRMP_AF"
+  }
+ ]
 }

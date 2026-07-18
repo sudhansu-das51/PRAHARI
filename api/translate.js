@@ -27,7 +27,11 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         model: "llama-3.3-70b-versatile",
         temperature: 0.2,
-        max_tokens: 250,
+        // Odia costs ~5x the tokens of Hindi for the same sentence (317 vs 64
+        // measured) because the tokenizer barely covers the script. At 250 the
+        // Odia alert truncated mid-word, dropping the "do not" off the last
+        // instruction — so the budget is sized for the worst case, not Hindi.
+        max_tokens: 700,
         messages: [
           {
             role: "system",
@@ -51,7 +55,16 @@ export default async function handler(req, res) {
     }
 
     const data = await r.json();
-    const out = data.choices?.[0]?.message?.content?.trim();
+    const choice = data.choices?.[0];
+    const out = choice?.message?.content?.trim();
+
+    // A half-finished safety instruction is worse than none — "wait for the
+    // storm" reads as the opposite of "do not wait for the storm". Fail here
+    // and let the UI keep showing the English original.
+    if (choice?.finish_reason === "length") {
+      console.error("translation truncated at max_tokens", { language });
+      return res.status(502).json({ error: "Translation incomplete" });
+    }
 
     if (!out) return res.status(502).json({ error: "Empty translation" });
 
