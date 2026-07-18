@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     language === "odia" ? "Odia (ଓଡ଼ିଆ script)" : "Hindi (देवनागरी script)";
 
   // See api/advisory.js — a key with stray whitespace makes fetch throw.
-  const key = (process.env.GROQ_API_KEY || "").trim();
+  const key = (process.env.GROQ_API_KEY || "").trim().split(/\s+/)[0] || "";
   if (!key) {
     console.error("GROQ_API_KEY is not set");
     return res.status(500).json({ error: "GROQ_API_KEY is not configured on the server" });
@@ -78,7 +78,8 @@ export default async function handler(req, res) {
     res.setHeader("Cache-Control", "s-maxage=600, stale-while-revalidate=3600");
     return res.status(200).json({ text: out });
   } catch (err) {
+    // See api/advisory.js — err.message can carry the Authorization header.
     console.error("translate handler error:", err);
-    return res.status(500).json({ error: "Internal error", detail: String(err && err.message) });
+    return res.status(500).json({ error: "Internal error", type: String(err && err.name) });
   }
 }

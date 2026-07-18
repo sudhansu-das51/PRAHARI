@@ -7,10 +7,13 @@ export default async function handler(req, res) {
       .json({ error: "Need ?district=&level=green|orange|red" });
   }
 
-  // Trimmed because a key pasted into the dashboard often carries a trailing
-  // newline, and fetch throws on an invalid header value rather than returning
-  // a bad response — which the catch below then reports as a generic 500.
-  const key = (process.env.GROQ_API_KEY || "").trim();
+  // First whitespace-delimited token, not just a trim. A key pasted into the
+  // dashboard arrives with a trailing newline, or — as happened here — pasted
+  // twice separated by one. A Groq key contains no whitespace, so anything
+  // after the first token is paste damage. fetch throws on an invalid header
+  // value rather than returning a bad response, so this never reaches Groq to
+  // fail cleanly; it surfaces as an opaque 500 instead.
+  const key = (process.env.GROQ_API_KEY || "").trim().split(/\s+/)[0] || "";
   if (!key) {
     console.error("GROQ_API_KEY is not set");
     return res.status(500).json({ error: "GROQ_API_KEY is not configured on the server" });
@@ -70,10 +73,11 @@ export default async function handler(req, res) {
     res.setHeader("Cache-Control", "s-maxage=3600, stale-while-revalidate=7200");
     return res.status(200).json({ advisory: text });
   } catch (err) {
-    // The message is surfaced deliberately. A bare "Internal error" hid a
-    // thrown fetch for a whole deploy cycle; the text here says "fetch is not
-    // defined" or "Invalid header value" and names the fault immediately.
+    // Only the error's type goes out. Returning err.message leaked the key:
+    // fetch puts the whole Authorization header into "…is an invalid header
+    // value", so the response handed the credential to anyone who called the
+    // endpoint. The message stays in the server log, where it is not public.
     console.error("advisory handler error:", err);
-    return res.status(500).json({ error: "Internal error", detail: String(err && err.message) });
+    return res.status(500).json({ error: "Internal error", type: String(err && err.name) });
   }
 }
