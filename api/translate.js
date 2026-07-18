@@ -17,11 +17,18 @@ export default async function handler(req, res) {
   const langName =
     language === "odia" ? "Odia (ଓଡ଼ିଆ script)" : "Hindi (देवनागरी script)";
 
+  // See api/advisory.js — a key with stray whitespace makes fetch throw.
+  const key = (process.env.GROQ_API_KEY || "").trim();
+  if (!key) {
+    console.error("GROQ_API_KEY is not set");
+    return res.status(500).json({ error: "GROQ_API_KEY is not configured on the server" });
+  }
+
   try {
     const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
+        Authorization: `Bearer ${key}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -72,6 +79,6 @@ export default async function handler(req, res) {
     return res.status(200).json({ text: out });
   } catch (err) {
     console.error("translate handler error:", err);
-    return res.status(500).json({ error: "Internal error" });
+    return res.status(500).json({ error: "Internal error", detail: String(err && err.message) });
   }
 }
