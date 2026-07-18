@@ -555,9 +555,8 @@ body::before {
   word-spacing: 0.03em;
   white-space: pre-line;
   color: var(--body);
-  max-height: 34vh;
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  /* No inner scroll. The page itself scrolls while this is open, and two
+     nested scrollbars is a worse way to read five numbered points than one. */
 }
 
 /* ---------- 8. Stats -------------------------------------- */
@@ -1083,6 +1082,34 @@ footer {
   .col > .stats .stat {
     height: 100%;
   }
+}
+
+/* While the advisory is open the page stops being a single screen.
+   Its length is unknown, so the alternative is compressing every other card to
+   make room and still running under the footer. Releasing the lock lets the
+   window scroll and leaves the rest of the layout at its natural size —
+   nothing the user was already reading moves or shrinks.
+   Placed after the single-page block so it overrides it regardless of order. */
+.advisory-open,
+.advisory-open body {
+  height: auto;
+  overflow: visible;
+}
+.advisory-open #root,
+.advisory-open .app {
+  height: auto;
+  min-height: 100vh;
+}
+/* The grid keeps the exact pixel height App pinned on it, so every card inside
+   holds the size it already had. Only the page below it grows. */
+.advisory-open .grid {
+  flex: none;
+}
+
+.advisory-box {
+  /* Sits below the grid at full width — five numbered points read better on
+     one wide column than squeezed into half the page. */
+  margin-top: var(--gap);
 }
 
 /* Short viewports — a 1080p laptop at 150% scaling lands here. The vh-scaled

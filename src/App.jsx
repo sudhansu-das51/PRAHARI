@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import districts from "./data/districts.json";
@@ -38,7 +38,73 @@ export default function App() {
 
   const appRef = useRef(null);
   const introDone = useRef(false);
+  const advisoryRef = useRef(null);
   const ready = !alert.loading && !alert.error;
+
+  /**
+   * The advisory is the one thing on this page that has no fixed length, so it
+   * is the one thing the single-viewport layout cannot absorb. Opening it used
+   * to squeeze the banner and stat cards and still run under the footer.
+   *
+   * Instead the page stops being a single screen while it is open: the class
+   * below releases the 100vh lock, every card returns to its natural height,
+   * and the window scrolls. Nothing else on the page changes size.
+   */
+  useLayoutEffect(() => {
+    const root = document.documentElement;
+    const grid = appRef.current && appRef.current.querySelector(".grid");
+    const open = advStatus === "ready";
+
+    if (open && grid) {
+      // Measured before the lock is released, and while the advisory still
+      // sits outside the grid — so this is the height the cards already have.
+      // Pinning it means releasing the page to scroll cannot resize them.
+      grid.style.height = `${grid.getBoundingClientRect().height}px`;
+    }
+    root.classList.toggle("advisory-open", open);
+    if (!open && grid) grid.style.height = "";
+
+    return () => {
+      root.classList.remove("advisory-open");
+      if (grid) grid.style.height = "";
+    };
+  }, [advStatus]);
+
+  // Reveal. Height is left alone — animating it would push the neighbouring
+  // cards around every frame, which is the behaviour being fixed here.
+  useGSAP(
+    () => {
+      if (advStatus !== "ready" || !advisoryRef.current) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      gsap.from(advisoryRef.current, {
+        opacity: 0,
+        y: -10,
+        duration: 0.4,
+        ease: "power3.out",
+        force3D: true,
+      });
+      advisoryRef.current.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    },
+    { dependencies: [advStatus], scope: appRef }
+  );
+
+  const closeAdvisory = () => {
+    const el = advisoryRef.current;
+    if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      resetAdvisory();
+      return;
+    }
+    // Unmount only once it has faded, so the layout does not snap back while
+    // the panel is still on screen.
+    gsap.to(el, {
+      opacity: 0,
+      y: -10,
+      duration: 0.25,
+      ease: "power2.in",
+      force3D: true,
+      onComplete: resetAdvisory,
+    });
+  };
 
   /**
    * One timeline owns the whole entrance.
@@ -200,14 +266,22 @@ export default function App() {
                 </div>
                 <button
                   className="advisory-btn"
-                  onClick={() => fetchAdvisory({ district: district.name, level: alert.level, gusts: alert.gusts, rain: alert.rain })}
+                  aria-expanded={advStatus === "ready"}
+                  onClick={
+                    advStatus === "ready"
+                      ? closeAdvisory
+                      : () => fetchAdvisory({ district: district.name, level: alert.level, gusts: alert.gusts, rain: alert.rain })
+                  }
                   disabled={advStatus === "loading"}
                 >
-                  {advStatus === "loading" ? "Preparing advisory\u2026" : "View full advisory \u2192"}
+                  {advStatus === "loading"
+                    ? "Preparing advisory\u2026"
+                    : advStatus === "ready"
+                      ? "Hide advisory \u2191"
+                      : "View full advisory \u2192"}
                 </button>
               </div>
 
-              {advStatus === "ready" && <div className="advisory-box">{advisory}</div>}
               {advStatus === "error" && (<div className="lang-status">Advisory unavailable. (Needs deployed /api)</div>)}
 
               <StatsGrid gusts={alert.gusts} rain={alert.rain} seaCondition={seaCondition} />
@@ -231,6 +305,16 @@ export default function App() {
           <Helplines controlRoom={district.controlRoom} />
         </div>
       </div>
+
+      {/* Deliberately outside .grid. Inside the left column its height fed back
+          into the column, and every stretched card shrank to make room the
+          moment it opened. Out here the grid keeps the exact height it had and
+          the advisory extends the page below it instead. */}
+      {advStatus === "ready" && (
+        <div className="advisory-box" ref={advisoryRef} role="region" aria-label="Full advisory">
+          {advisory}
+        </div>
+      )}
 
 
       <footer>
